@@ -278,7 +278,7 @@ do
                     continue;
                 }
 
-                animalAge = ourAnimals[i, 2].Substring(5);
+                animalAge = ourAnimals[i, 2][5..];
                 validEntry = int.TryParse(animalAge, out int petAge);
                 if (validEntry == false)
                 {
@@ -296,7 +296,26 @@ do
                         }
                     } while (validEntry == false);
                 }
+
+                animalPhysicalDescription = ourAnimals[i, 4][22..];
+                validEntry = animalPhysicalDescription.Length > 0;
+                if (validEntry == false)
+                {
+                    do
+                    {
+                        Console.WriteLine($"Enter a physical description for ID #: {animalID} (size, color, gender, weight, housebroken)");
+                        readResult = Console.ReadLine();
+                        if (readResult != null) {
+                            validEntry = readResult.Length > 0;
+                            if (validEntry == true) 
+                            {
+                                ourAnimals[i, 4] = string.Concat("Physical description: ", readResult);
+                            }
+                        }
+                    } while (validEntry == false);
+                }  
             }
+            Console.WriteLine("Age and physical description fields are complete for all of our friends.");
             Console.WriteLine("Press the Enter key to continue.");
             readResult = Console.ReadLine();
             break;
