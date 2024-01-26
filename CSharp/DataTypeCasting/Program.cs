@@ -50,5 +50,18 @@ class Program
 
         int value21 = Convert.ToInt32(1.5m); // converting rounds up
         Console.WriteLine(value21);
+
+        // TryParse
+        string tryParseValue = "102";
+        int tryParseResult = 0;
+        if (int.TryParse(tryParseValue, out tryParseResult))
+        {
+            Console.WriteLine($"Measurement: {tryParseResult}");
+        }
+        else
+        {
+            Console.WriteLine("Unable to report the measurement.");
+        }
+        Console.WriteLine($"Measurement (w/ offset): {50 + tryParseResult}");
     }
 }
