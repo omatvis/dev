@@ -17,7 +17,14 @@ class Program
 
     private static void Process1()
     {
-        WriteMessage();
+        try
+        {
+        WriteMessage();    
+        }
+        catch (System.Exception)
+        {
+            Console.WriteLine("Exception caught in Process1");
+        }        
     }
 
     private static void WriteMessage()
