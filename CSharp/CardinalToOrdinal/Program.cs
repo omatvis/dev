@@ -4,6 +4,7 @@ class Program
 {
     static void Main(string[] args)
     {
+        //hot reload testing
         RunCardinalToOrdinal();
     }
 
@@ -31,11 +32,16 @@ class Program
         return ordinalText;
     }
 
-    static void RunCardinalToOrdinal()
+    static async void RunCardinalToOrdinal()
     {
         for (int i = 0; i < 150; i++)
         {
             Console.WriteLine($"{CardinalToOrdinal(i)}");
+        }
+        while (true)
+        {
+            Console.WriteLine("Hot Reloading Testing");
+            await Task.Delay(2000);
         }
     }
 }
