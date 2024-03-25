@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.002.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConfigurableInstrumenting", "ConfigurableInstrumenting.csproj", "{7BFEAB21-66D6-44A7-B802-35E1274B62BD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7BFEAB21-66D6-44A7-B802-35E1274B62BD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7BFEAB21-66D6-44A7-B802-35E1274B62BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7BFEAB21-66D6-44A7-B802-35E1274B62BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7BFEAB21-66D6-44A7-B802-35E1274B62BD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {030A1859-26FA-415A-8FB3-F24814EC09A8}
+	EndGlobalSection
+EndGlobal
