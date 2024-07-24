@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Convertor", "Convertor\Conv
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PandaPopulation", "PandaPopulation\PandaPopulation.csproj", "{327EFAF6-6AC0-4EE5-AB73-85E8C207F6B9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ParamsModifier", "ParamsModifier\ParamsModifier.csproj", "{6516DD82-BF3C-47C9-A423-CD01C709C4FE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{327EFAF6-6AC0-4EE5-AB73-85E8C207F6B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{327EFAF6-6AC0-4EE5-AB73-85E8C207F6B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{327EFAF6-6AC0-4EE5-AB73-85E8C207F6B9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6516DD82-BF3C-47C9-A423-CD01C709C4FE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6516DD82-BF3C-47C9-A423-CD01C709C4FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6516DD82-BF3C-47C9-A423-CD01C709C4FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6516DD82-BF3C-47C9-A423-CD01C709C4FE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
