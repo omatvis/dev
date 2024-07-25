@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PandaPopulation", "PandaPop
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ParamsModifier", "ParamsModifier\ParamsModifier.csproj", "{6516DD82-BF3C-47C9-A423-CD01C709C4FE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Indexers", "Indexers\Indexers.csproj", "{FB87FC35-A056-443E-B799-8D103F3E5C8B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{6516DD82-BF3C-47C9-A423-CD01C709C4FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6516DD82-BF3C-47C9-A423-CD01C709C4FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6516DD82-BF3C-47C9-A423-CD01C709C4FE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FB87FC35-A056-443E-B799-8D103F3E5C8B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FB87FC35-A056-443E-B799-8D103F3E5C8B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FB87FC35-A056-443E-B799-8D103F3E5C8B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FB87FC35-A056-443E-B799-8D103F3E5C8B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
