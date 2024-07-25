@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ParamsModifier", "ParamsMod
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Indexers", "Indexers\Indexers.csproj", "{FB87FC35-A056-443E-B799-8D103F3E5C8B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NewOverride", "NewOverride\NewOverride.csproj", "{77A9EF13-0967-45E6-97C3-7EBE4883FE48}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{FB87FC35-A056-443E-B799-8D103F3E5C8B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FB87FC35-A056-443E-B799-8D103F3E5C8B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FB87FC35-A056-443E-B799-8D103F3E5C8B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{77A9EF13-0967-45E6-97C3-7EBE4883FE48}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{77A9EF13-0967-45E6-97C3-7EBE4883FE48}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{77A9EF13-0967-45E6-97C3-7EBE4883FE48}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{77A9EF13-0967-45E6-97C3-7EBE4883FE48}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
