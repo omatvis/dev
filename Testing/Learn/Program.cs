@@ -3,13 +3,12 @@
 class Program
 {
     static void Main(string[] args)
-    {
-        ArtificialSequence seq = new();
+    {   // Loop from 1 to 100 implementing IEnumerable and IEnumerator
+        /*ArtificialSequence seq = new();
         foreach (int item in seq)
         {
-          Console.WriteLine(item);    
-        }        
+            Console.WriteLine(item);
+        }*/
+
     }
 }
-
-
