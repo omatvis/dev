@@ -1,3 +1,7 @@
+using System.Diagnostics;
+using System.Runtime.CompilerServices;
+using Microsoft.Extensions.Configuration;
+
 partial class Program
 {
     static void TimesTable(byte number, byte size = 12)
@@ -71,5 +75,41 @@ partial class Program
                 arg1: FibFunctional(term: i)
             );
         }
+    }
+
+    static void TraceLoggingLevels()
+    {
+        WriteLine("Reading from appsettings.json in {0}", arg0: Directory.GetCurrentDirectory());
+        ConfigurationBuilder builder = new();
+        builder.SetBasePath(Directory.GetCurrentDirectory());
+        builder.AddJsonFile(path: "appsettings.json", optional: true, reloadOnChange: true);
+        IConfigurationRoot configuration = builder.Build();
+        TraceSwitch ts =
+            new(displayName: "PacktSwitch", description: "This switch is set via a JSON config.");
+        configuration.GetSection("PacktSwitch").Bind(ts);
+        Trace.WriteLineIf(ts.TraceError, "Trace error");
+        Trace.WriteLineIf(ts.TraceWarning, "Trace warning");
+        Trace.WriteLineIf(ts.TraceInfo, "Trace info");
+        Trace.WriteLineIf(ts.TraceVerbose, "Trace Verbose");
+        ReadLine();
+    }
+
+    static void LogSourceDetails(
+        bool condition,
+        [CallerMemberName] string callerName = "",
+        [CallerFilePath] string callerFilePath = "",
+        [CallerLineNumber] int callerLineNumber = 0,
+        [CallerArgumentExpression(nameof(condition))] string callerArgumentExpression = ""
+    )
+    {
+        Trace.WriteLine(
+            string.Format(
+                "[{0}]\n {1} on line {2}. Expression {3}",
+                callerFilePath,
+                callerName,
+                callerLineNumber,
+                callerArgumentExpression
+            )
+        );
     }
 }
