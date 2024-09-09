@@ -19,5 +19,6 @@ partial class Program
         Trace.WriteLine("Trace says, I am watching");
 
         TraceLoggingLevels();
+        LogSourceDetails(true);
     }
 }
