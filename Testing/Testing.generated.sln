@@ -15,6 +15,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UnitTests", "UnitTests", "{
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalculatorLibUnitTests", "Lib\UnitTests\CalculatorLibUnitTests\CalculatorLibUnitTests.csproj", "{A1C4E840-AD8B-446A-9C14-ED8C5F23EC78}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PacktLib", "Lib\PacktLib\PacktLib.csproj", "{5FAC13C5-E8E5-4068-B798-C5BD45E6B59E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -37,6 +39,10 @@ Global
 		{A1C4E840-AD8B-446A-9C14-ED8C5F23EC78}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A1C4E840-AD8B-446A-9C14-ED8C5F23EC78}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A1C4E840-AD8B-446A-9C14-ED8C5F23EC78}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5FAC13C5-E8E5-4068-B798-C5BD45E6B59E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5FAC13C5-E8E5-4068-B798-C5BD45E6B59E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5FAC13C5-E8E5-4068-B798-C5BD45E6B59E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5FAC13C5-E8E5-4068-B798-C5BD45E6B59E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -48,5 +54,6 @@ Global
 		{3C09968E-0F28-4372-975F-87C26A9F9E51} = {5AAF6281-3970-4C11-84B7-37B90A669B71}
 		{83CD0C81-B23C-410F-B65C-95853EA6A72E} = {5AAF6281-3970-4C11-84B7-37B90A669B71}
 		{A1C4E840-AD8B-446A-9C14-ED8C5F23EC78} = {83CD0C81-B23C-410F-B65C-95853EA6A72E}
+		{5FAC13C5-E8E5-4068-B798-C5BD45E6B59E} = {5AAF6281-3970-4C11-84B7-37B90A669B71}
 	EndGlobalSection
 EndGlobal
