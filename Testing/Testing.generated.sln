@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalculatorLibUnitTests", "L
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PacktLib", "Lib\PacktLib\PacktLib.csproj", "{5FAC13C5-E8E5-4068-B798-C5BD45E6B59E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Classes", "Classes\Classes.csproj", "{0FDF663D-4295-478E-9294-AE79D9924084}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -43,6 +45,10 @@ Global
 		{5FAC13C5-E8E5-4068-B798-C5BD45E6B59E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5FAC13C5-E8E5-4068-B798-C5BD45E6B59E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5FAC13C5-E8E5-4068-B798-C5BD45E6B59E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0FDF663D-4295-478E-9294-AE79D9924084}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0FDF663D-4295-478E-9294-AE79D9924084}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0FDF663D-4295-478E-9294-AE79D9924084}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0FDF663D-4295-478E-9294-AE79D9924084}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
