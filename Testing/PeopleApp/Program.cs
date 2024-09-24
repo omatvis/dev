@@ -1,5 +1,4 @@
-﻿using System.Security.Cryptography.X509Certificates;
-using Packt.Shared;
+﻿using Packt.Shared;
 
 namespace PeopleApp;
 
@@ -48,10 +47,26 @@ partial class Program
 
         // assign a method to the Shout delegate
         harry.Shout += Harry_Shout; // call the Poke method that raises the Shout event
-        harry.Shout += Harry_Shout2; 
+        harry.Shout += Harry_Shout2;
         harry.Poke();
         harry.Poke();
         harry.Poke();
         harry.Poke();
+
+        Person?[] people =
+        {
+            null,
+            new() { Name = "Simon" },
+            new() { Name = "Jenny" },
+            new() { Name = "Adam" },
+            new() { Name = null },
+            new() { Name = "Richard" }
+        };
+        OutputPeopleNames(people, "Initial list of people:");
+        Array.Sort(people);
+        OutputPeopleNames(people, "After sorting using Person's IComparable implementation:");
+
+        Array.Sort(people, new PersonComparer());
+        OutputPeopleNames(people, "After sorting using PersonComparer's IComparer implementation:");
     }
 }
