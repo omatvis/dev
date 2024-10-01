@@ -2,14 +2,15 @@
 
 namespace Learn;
 
-class Program
+partial class Program
 {
     static void Main(string[] args)
-    {   // Loop from 1 to 100 implementing IEnumerable and IEnumerator
-        ArtificialSequence seq = new();
-        foreach (int item in seq)
-        {
-            Console.WriteLine(item);
-        }
+    {   
+        ChildBaseClass childBaseClass = new ();
+        childBaseClass.BaseMethod();
+        BaseClass baseClass = childBaseClass;
+        baseClass.MethodToHideInChild();
+        childBaseClass.MethodToHideInChild();
+
     }
 }
