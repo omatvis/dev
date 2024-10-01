@@ -23,6 +23,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PeopleAppPacktLibrary", "Li
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PeopleApp", "PeopleApp\PeopleApp.csproj", "{C269AAB5-484D-412D-9D29-25CBA68BA8F2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AssembliesAndNamespaces", "AssembliesAndNamespaces\AssembliesAndNamespaces.csproj", "{D9FB9C4C-2248-4D9E-88F5-B4F707ECE864}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -61,6 +63,10 @@ Global
 		{C269AAB5-484D-412D-9D29-25CBA68BA8F2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C269AAB5-484D-412D-9D29-25CBA68BA8F2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C269AAB5-484D-412D-9D29-25CBA68BA8F2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D9FB9C4C-2248-4D9E-88F5-B4F707ECE864}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D9FB9C4C-2248-4D9E-88F5-B4F707ECE864}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D9FB9C4C-2248-4D9E-88F5-B4F707ECE864}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D9FB9C4C-2248-4D9E-88F5-B4F707ECE864}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
