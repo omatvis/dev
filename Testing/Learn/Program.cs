@@ -1,4 +1,5 @@
-﻿using System.Security.Cryptography;
+﻿using System.Numerics;
+using System.Security.Cryptography;
 
 namespace Learn;
 
@@ -11,6 +12,5 @@ partial class Program
         BaseClass baseClass = childBaseClass;
         baseClass.MethodToHideInChild();
         childBaseClass.MethodToHideInChild();
-
     }
 }
