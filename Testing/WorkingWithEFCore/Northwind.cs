@@ -12,12 +12,13 @@ public class Northwind : DbContext
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
         string connection =
-            $"Server=192.168.99.107;Database=Northwind;User Id=sa;Password=Testing1122;TrustServerCertificate=True;";
+            $"Server=127.0.0.1;Database=Northwind;User Id=sa;Password=Testing1122;TrustServerCertificate=True;";
         ConsoleColor previousColor = ForegroundColor;
         ForegroundColor = ConsoleColor.DarkYellow;
         WriteLine($"Connection: {connection}");
         ForegroundColor = previousColor;
         optionsBuilder.UseSqlServer(connection);
+        optionsBuilder.LogTo(WriteLine) .EnableSensitiveDataLogging();
     }
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
@@ -37,5 +38,6 @@ public class Northwind : DbContext
                 .Property(product => product.Cost)
                 .HasConversion<double>();
         }
+        modelBuilder.Entity<Product>().HasQueryFilter(p => !p.Discontinued);
     }
 }
