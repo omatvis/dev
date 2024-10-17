@@ -31,6 +31,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorkingWithFileSystems", "W
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorkingWithEFCore", "WorkingWithEFCore\WorkingWithEFCore.csproj", "{412EA0CE-50A0-460A-A016-42195CD72A46}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LinqWithObjects", "LinqWithObjects\LinqWithObjects.csproj", "{072AC46A-C46F-44AA-82ED-09DF03183786}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -85,6 +87,10 @@ Global
 		{412EA0CE-50A0-460A-A016-42195CD72A46}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{412EA0CE-50A0-460A-A016-42195CD72A46}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{412EA0CE-50A0-460A-A016-42195CD72A46}.Release|Any CPU.Build.0 = Release|Any CPU
+		{072AC46A-C46F-44AA-82ED-09DF03183786}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{072AC46A-C46F-44AA-82ED-09DF03183786}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{072AC46A-C46F-44AA-82ED-09DF03183786}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{072AC46A-C46F-44AA-82ED-09DF03183786}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
