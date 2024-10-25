@@ -33,6 +33,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorkingWithEFCore", "Workin
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LinqWithObjects", "LinqWithObjects\LinqWithObjects.csproj", "{072AC46A-C46F-44AA-82ED-09DF03183786}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LingWithEFCore", "LingWithEFCore\LingWithEFCore.csproj", "{D794777D-06E4-4216-970C-2D18C8EF777F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LinqInParallel", "LinqInParallel\LinqInParallel.csproj", "{98ADE6EE-D2B0-42F3-8D64-0252E12D8FD3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -91,6 +95,14 @@ Global
 		{072AC46A-C46F-44AA-82ED-09DF03183786}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{072AC46A-C46F-44AA-82ED-09DF03183786}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{072AC46A-C46F-44AA-82ED-09DF03183786}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D794777D-06E4-4216-970C-2D18C8EF777F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D794777D-06E4-4216-970C-2D18C8EF777F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D794777D-06E4-4216-970C-2D18C8EF777F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D794777D-06E4-4216-970C-2D18C8EF777F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{98ADE6EE-D2B0-42F3-8D64-0252E12D8FD3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{98ADE6EE-D2B0-42F3-8D64-0252E12D8FD3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{98ADE6EE-D2B0-42F3-8D64-0252E12D8FD3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{98ADE6EE-D2B0-42F3-8D64-0252E12D8FD3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
