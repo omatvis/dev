@@ -2,10 +2,13 @@
 {
     private static void Main(string[] args)
     {
-        /*FilterAndSort();
+        FilterAndSort();
         JoinCategoriesAndProducts();
         GroupJoinCategoriesAndProducts();
-        AggregateProducts();*/
+        AggregateProducts();
         PagingProducts();
+        CustomExtensionMethods();
+        OutputProductsAsXml();
+        ProcessSettings();
     }
 }

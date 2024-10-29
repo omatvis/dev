@@ -9,6 +9,7 @@
 
   <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="8.0.10" />
+    <Using Include="System.Console" Static="true"/>
   </ItemGroup>
 
 </Project>

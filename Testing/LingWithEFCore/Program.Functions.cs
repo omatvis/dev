@@ -1,3 +1,4 @@
+using System.Xml.Linq;
 using Microsoft.Data.SqlClient;
 using Microsoft.EntityFrameworkCore;
 using Packt.Shared;
@@ -11,7 +12,8 @@ partial class Program
         using (var db = new Northwind())
         {
             DbSet<Product> allProducts = db.Products;
-            IQueryable<Product> filteredProducts = allProducts.Where(product =>
+            IQueryable<Product> processedProducts = allProducts.ProcessSequence();
+            IQueryable<Product> filteredProducts = processedProducts.Where(product =>
                 product.UnitPrice < 10M
             );
             IOrderedQueryable<Product> sortedAndFilteredProducts =
@@ -257,6 +259,84 @@ partial class Program
                     break; // out of the while loop.
                 Console.WriteLine();
             }
+        }
+    }
+
+    static void CustomExtensionMethods()
+    {
+        using (Northwind db = new())
+        {
+            WriteLine(
+                "{0,-25} {1,10:N0}",
+                "Mean units in stock: ",
+                db.Products.Average(p => p.UnitsInStock)
+            );
+
+            WriteLine(
+                "{0,-25} {1,10:$#,##0.00}",
+                "Mean unit price: ",
+                db.Products.Average(p => p.UnitPrice)
+            );
+            WriteLine(
+                "{0,-25} {1,10:$#,##0.00}",
+                "Median units in stock: ",
+                db.Products.Median(p => p.UnitsInStock)
+            );
+            WriteLine(
+                "{0,-25} {1,10:$#,##0.00}",
+                "Median unit price: ",
+                db.Products.Median(p => p.UnitPrice)
+            );
+            WriteLine(
+                "{0,-25} {1,10:$#,##0.00}",
+                "Mode units in stock: ",
+                db.Products.Mode(p => p.UnitsInStock)
+            );
+            WriteLine(
+                "{0,-25} {1,10:$#,##0.00}",
+                "Mode unit price : ",
+                db.Products.Mode(p => p.UnitPrice)
+            );
+        }
+    }
+
+    static void OutputProductsAsXml()
+    {
+        SectionTitle("Output products as XML");
+        using (Northwind db = new Northwind())
+        {
+            Product[] productsArray = db.Products.ToArray();
+            XElement xml =
+                new(
+                    "products",
+                    from p in productsArray
+                    select new XElement(
+                        "product",
+                        new XAttribute("id", p.ProductId),
+                        new XAttribute("price", p.UnitPrice),
+                        new XElement("name", p.ProductName)
+                    )
+                );
+            WriteLine(xml.ToString());
+        }
+    }
+
+    static void ProcessSettings()
+    {
+        string path = Path.Combine(Environment.CurrentDirectory, "settings.xml");
+        WriteLine($"Settings file path : {path} ");
+        XDocument doc = XDocument.Load(path);
+        var appSettings = doc.Descendants("appSettings")
+            .Descendants("add")
+            .Select(node => new
+            {
+                Key = node.Attribute("key")?.Value,
+                Value = node.Attribute("value")?.Value
+            })
+            .ToArray();
+        foreach (var item in appSettings)
+        {
+            WriteLine($"{item.Key}: {item.Value}");
         }
     }
 }
