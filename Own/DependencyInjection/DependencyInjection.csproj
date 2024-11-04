@@ -8,7 +8,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Using Include="System.Console" Static="true"/>
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="8.0.1" />
   </ItemGroup>
 
 </Project>
