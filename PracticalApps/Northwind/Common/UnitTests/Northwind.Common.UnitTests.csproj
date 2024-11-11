@@ -21,7 +21,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\DataContext\SQLServer\Northwind.Common.DataContext.SQLServer.csproj" />
+    <ProjectReference Include="..\DataContext\SQLServer\Northwind.Common.DataContext.SQLServer.csproj" />
   </ItemGroup>
 
 </Project>
