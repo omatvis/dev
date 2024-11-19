@@ -29,6 +29,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Employees", "Employees", "{
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Northwind.Razor.Employees", "Northwind\Razor\Employees\Northwind.Razor.Employees\Northwind.Razor.Employees.csproj", "{5E457221-16E8-4E9C-97A6-E6E4D59CBDCF}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Mvc", "Mvc", "{2F0D6E95-B1A5-4F51-8CB0-2EA912B4F2DA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Northwind.Mvc", "Northwind\Mvc\Northwind.Mvc\Northwind.Mvc.csproj", "{21C14BF5-D947-4F01-AD1A-653207102E57}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -55,6 +59,10 @@ Global
 		{5E457221-16E8-4E9C-97A6-E6E4D59CBDCF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5E457221-16E8-4E9C-97A6-E6E4D59CBDCF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5E457221-16E8-4E9C-97A6-E6E4D59CBDCF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{21C14BF5-D947-4F01-AD1A-653207102E57}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{21C14BF5-D947-4F01-AD1A-653207102E57}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{21C14BF5-D947-4F01-AD1A-653207102E57}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{21C14BF5-D947-4F01-AD1A-653207102E57}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -72,6 +80,8 @@ Global
 		{70E523BC-0E29-4B3E-8C39-65F3633081C2} = {6EACCBF5-73EE-47D8-802E-C0E85EA42709}
 		{2ABF7077-6130-4665-B0C9-27942D2D7E1A} = {70E523BC-0E29-4B3E-8C39-65F3633081C2}
 		{5E457221-16E8-4E9C-97A6-E6E4D59CBDCF} = {2ABF7077-6130-4665-B0C9-27942D2D7E1A}
+		{2F0D6E95-B1A5-4F51-8CB0-2EA912B4F2DA} = {6EACCBF5-73EE-47D8-802E-C0E85EA42709}
+		{21C14BF5-D947-4F01-AD1A-653207102E57} = {2F0D6E95-B1A5-4F51-8CB0-2EA912B4F2DA}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {A1B25D8C-9EF9-4007-911B-FCCD40D8D9F9}
