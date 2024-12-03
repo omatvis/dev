@@ -36,7 +36,8 @@ internal class Program
     /// Write a program that reads a text file and displays the number of words.
     /// </summary>
 
-    public static void NumberOfWordsInAFile(string filePath) { 
+    public static void NumberOfWordsInAFile(string filePath)
+    {
         string content = File.ReadAllText(filePath, Encoding.UTF8);
         string[] strings = content.Split(' ');
         Console.WriteLine("Words in the text: " + strings.Length);
@@ -46,10 +47,11 @@ internal class Program
     /// Write a program that reads a text file and displays the longest word in the file.
     /// </summary>
 
-    public static void LongestWordInAFile(string filePath) { 
+    public static void LongestWordInAFile(string filePath)
+    {
         string content = File.ReadAllText(filePath, Encoding.UTF8);
         string[] strings = content.Split(' ');
-        int maxLength = strings.Select(x => x.Trim()).Max( r => r.Length );
-        Console.WriteLine("Longest word in the text: " + maxLength);        
+        int maxLength = strings.Select(x => x.Trim()).Max(r => r.Length);
+        Console.WriteLine("Longest word in the text: " + maxLength);
     }
 }
