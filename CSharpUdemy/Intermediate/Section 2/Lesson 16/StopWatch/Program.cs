@@ -24,6 +24,6 @@ internal class Program
         stopWatch.Start();
         Thread.Sleep(1000);
         stopWatch.Stop();
-        Console.WriteLine($"Duration: {stopWatch.Duration.TotalSeconds} seconds"); 
+        Console.WriteLine($"Duration: {stopWatch.Duration.TotalSeconds} seconds");
     }
 }

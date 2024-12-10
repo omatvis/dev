@@ -1,4 +1,5 @@
 namespace StopWatch;
+
 public class StopWatch
 {
     private DateTime _startDateTime;
