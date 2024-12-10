@@ -20,7 +20,8 @@ public class DBCommand
         _dbConnection = dbConnection;
     }
 
-    public void Execute() {
+    public void Execute()
+    {
         _dbConnection.Open();
         System.Console.WriteLine($"Execute T-SQL instructions: {_instruction}");
         _dbConnection.Close();
