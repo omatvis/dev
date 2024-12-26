@@ -17,11 +17,11 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Using Include="Xunit" />
+    <ProjectReference Include="..\DataContext\SqlServer\Northwind.Common.DataContext.SqlServer.csproj" />
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\DataContext\SQLServer\Northwind.Common.DataContext.SQLServer.csproj" />
+    <Using Include="Xunit" />
   </ItemGroup>
 
 </Project>

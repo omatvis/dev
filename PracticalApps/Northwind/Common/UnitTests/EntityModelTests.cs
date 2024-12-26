@@ -7,14 +7,14 @@ public class EntityModelTests
     [Fact]
     public void DatabaseConnectTest()
     {
-        using NorthwindContext db = new();
+        using var db = new NorthwindContext();
         Assert.True(db.Database.CanConnect());
     }
 
     [Fact]
     public void CategoryCountTest()
     {
-        using NorthwindContext db = new();
+        using var db = new NorthwindContext();
         int expected = 8;
         int actual = db.Categories.Count();
         Assert.Equal(expected, actual);

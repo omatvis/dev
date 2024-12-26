@@ -1,0 +1,38 @@
+@page
+@using Packt.Shared
+@model Northwind.Web.Pages.CustomersModel
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+<div class="row">
+    <h1 class="display-2">Customers</h1>
+    <table class="table">
+        <thead class="thead-inverse">
+            <tr>
+                <th>Country</th>
+                <th>Company Name</th>
+                <th>Contact Name</th>
+                <th>Phone</th>
+            </tr>
+        </thead>
+        <tbody>
+            @if (Model.CustomersGroupByCountry is not null)
+                @foreach (IGrouping<string?, Customer> group in Model.CustomersGroupByCountry)
+                {
+                    <tr>
+                        <td>@group.Key</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    @foreach (Customer c in group)
+                    {
+                        <tr>
+                            <td></td>
+                            <td><a class="link-underline-primary" href="customerdetails?CustomerId=@c.CustomerId">@c.CompanyName</a></td>
+                            <td>@c.ContactName</td>
+                            <td>@c.Phone</td>
+                        </tr>
+                    }
+                }
+        </tbody>
+    </table>
+</div>
