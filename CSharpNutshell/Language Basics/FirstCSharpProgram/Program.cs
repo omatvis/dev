@@ -1,4 +1,5 @@
 ﻿using System;
+
 internal class Program
 {
     private static void Main(string[] args)
@@ -8,11 +9,13 @@ internal class Program
         Console.WriteLine(FeetTotInches(30));
         Console.WriteLine(FeetTotInches(100));
 
-        static int FeetTotInches(int feet) {
+        static int FeetTotInches(int feet)
+        {
             return feet * 12;
         }
 
-        static void SayHello() {
+        static void SayHello()
+        {
             Console.WriteLine("Hello, world!");
         }
     }

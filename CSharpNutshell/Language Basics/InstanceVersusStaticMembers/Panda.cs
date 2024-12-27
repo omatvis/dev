@@ -1,5 +1,7 @@
 namespace Animals;
-public class Panda{
+
+public class Panda
+{
     public string Name;
     public static int Population = 0;
 
@@ -8,5 +10,4 @@ public class Panda{
         Name = name;
         ++Population;
     }
-
 }
