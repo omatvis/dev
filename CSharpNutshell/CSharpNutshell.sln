@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.5.002.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Language Basics", "Language Basics", "{857172AC-43A8-4778-A554-5B73A0BAA1F9}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "LanguageBasics", "LanguageBasics", "{857172AC-43A8-4778-A554-5B73A0BAA1F9}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FirstCSharpProgram", "Language Basics\FirstCSharpProgram\FirstCSharpProgram.csproj", "{1D8DC810-411C-479B-938B-F9A1A1DAFC8F}"
 EndProject
@@ -24,6 +24,10 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NullOperators", "Language Basics\NullOperators\NullOperators.csproj", "{92D402BC-F546-4B2E-B591-D948F9AA06FC}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Statements", "Language Basics\Statements\Statements.csproj", "{800B9668-03F6-4F32-9192-5034121EE3FF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CreatingTypes", "CreatingTypes", "{DDE391C7-A170-4322-B87D-C2A71AFAFFEA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Classes", "CreatingTypes\Classes\Classes.csproj", "{597B9231-77C4-4F8B-A1D6-76FF88F24E6F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -71,6 +75,10 @@ Global
 		{800B9668-03F6-4F32-9192-5034121EE3FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{800B9668-03F6-4F32-9192-5034121EE3FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{800B9668-03F6-4F32-9192-5034121EE3FF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{597B9231-77C4-4F8B-A1D6-76FF88F24E6F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{597B9231-77C4-4F8B-A1D6-76FF88F24E6F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{597B9231-77C4-4F8B-A1D6-76FF88F24E6F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{597B9231-77C4-4F8B-A1D6-76FF88F24E6F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -86,6 +94,7 @@ Global
 		{80E101C9-96FC-4880-9C30-7D9313153B4F} = {857172AC-43A8-4778-A554-5B73A0BAA1F9}
 		{92D402BC-F546-4B2E-B591-D948F9AA06FC} = {857172AC-43A8-4778-A554-5B73A0BAA1F9}
 		{800B9668-03F6-4F32-9192-5034121EE3FF} = {857172AC-43A8-4778-A554-5B73A0BAA1F9}
+		{597B9231-77C4-4F8B-A1D6-76FF88F24E6F} = {DDE391C7-A170-4322-B87D-C2A71AFAFFEA}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {52F3BF87-740B-465A-B4AD-7C0DBEB7EBDE}
