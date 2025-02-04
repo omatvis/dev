@@ -24,9 +24,10 @@ internal class Program
             .AddDefaultIdentity<IdentityUser>(
                 options => options.SignIn.RequireConfirmedAccount = true
             )
+            .AddRoles<IdentityRole>()
             .AddEntityFrameworkStores<ApplicationDbContext>();
         builder.Services.AddControllersWithViews();
-
+        // if you are using SQL Server
         string? sqlServerConnection = builder.Configuration.GetConnectionString(
             "NorthwindConnection"
         );
@@ -37,9 +38,12 @@ internal class Program
         else
         {
             builder.Services.AddNorthwindContext(sqlServerConnection);
-            builder.Services.AddNorthwindContext();
         }
-
+        builder.Services.AddOutputCache(options =>
+        {
+            options.DefaultExpirationTimeSpan = TimeSpan.FromSeconds(20);
+            options.AddPolicy("views", p => p.SetVaryByQuery(""));
+        });
         var app = builder.Build();
 
         // Configure the HTTP request pipeline.
@@ -60,10 +64,13 @@ internal class Program
         app.UseRouting();
 
         app.UseAuthorization();
-
-        app.MapControllerRoute(name: "default", pattern: "{controller=Home}/{action=Index}/{id?}");
+        app.UseOutputCache();
+        app.MapControllerRoute(name: "default", pattern: "{controller=Home}/{action=Index}/{id?}")
+            .CacheOutput("views");
+        ;
         app.MapRazorPages();
-
+        app.MapGet("/notcached", () => DateTime.Now.ToString());
+        app.MapGet("/cached", () => DateTime.Now.ToString()).CacheOutput();
         app.Run();
     }
 }

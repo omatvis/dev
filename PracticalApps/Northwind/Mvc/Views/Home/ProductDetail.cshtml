@@ -2,18 +2,24 @@
 @{
     ViewData["Title"] = "Product Detail" + Model.ProductName;
 }
-<h2>Product Detail</h2>
+
+<h2> Product Detail</h2>
+<p class="alert alert-@ViewData["alertstyle"]">@DateTime.Now.ToLongTimeString()</p>
 <hr />
 <div>
     <dl class="dl-horizontal">
         <dt>Product Id</dt>
         <dd>@Model.ProductId</dd>
-        <dt>Product Name</dt>
+        <dt> Product Name</dt>
         <dd>@Model.ProductName</dd>
-        <dt>Category Id</dt>
+        <dt>Category Id </dt>
         <dd>@Model.CategoryId</dd>
         <dt>Unit Price</dt>
-        <dd>@Model.UnitPrice.Value.ToString("C")</dd>
+        <dd>@{
+                var unitPrice = Model.UnitPrice.HasValue ? Model.UnitPrice.Value.ToString("C") : "N/A";
+                @unitPrice
+            }
+        </dd>
         <dt>Units In Stock</dt>
         <dd>@Model.UnitsInStock</dd>
     </dl>

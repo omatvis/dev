@@ -7,7 +7,7 @@ public class CustomerDetailsModel : PageModel
 {
     public IEnumerable<Customer>? Customers { get; set; }
     public Customer? SelectedCustomer { get; set; }
-    public IEnumerable<Order> CustomerOrders { get; set; }
+    public IEnumerable<Order>? CustomerOrders { get; set; }
     private NorthwindContext db;
 
     public void OnGet()

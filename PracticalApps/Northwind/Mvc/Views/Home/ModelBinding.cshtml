@@ -1,14 +1,14 @@
-@model Northwind.Mvc.Models.HomeModelBindingViewModel
+﻿@model Northwind.Mvc.Models.HomeModelBindingViewModel
 @{
     ViewData["Title"] = "Model Binding Demo";
 }
 
-<h1>@ViewData["Title"] </h1>
+<h1>@ViewData["Title"]</h1>
 <div>
     Enter values for your thing in the following form:
 </div>
 <form method="POST" action="/home/modelbinding/2?id=3">
-    <input name="id" value="1" />
+    <input name="id " value="1" />
     <input name="color" value="Red" />
     <input name="email" value="test@example.com" />
     <input type="submit" />
@@ -25,7 +25,6 @@
             <dd>@Model.Thing.Color</dd>
             <dt>Model.Thing.Email</dt>
             <dd>@Model.Thing.Email</dd>
-
         </dl>
     </div>
     @if (Model.HasErrors)
