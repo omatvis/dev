@@ -151,5 +151,24 @@ namespace Practice
             stock.PriceChanged += stock_PriceChanged;
             stock.Price = 31.59M;
         }
+
+        public static void ClosureRun()
+        {
+            static Func<int> Natural()
+            {
+                int seed = 0;
+                return int () => seed++;
+            }
+
+            Func<int> natural = Natural();
+            System.Console.WriteLine(natural());
+            System.Console.WriteLine(natural());
+        }
+
+        public static void IteratorsRun()
+        {
+            foreach (int fib in Fibonachi.EvenNumbersOnly(Fibonachi.Fibs(6)))
+                Console.WriteLine(fib);
+        }
     }
 }
