@@ -16,6 +16,7 @@ namespace WPFThreading;
 /// </summary>
 public partial class MainWindow : Window
 {
+    private SynchronizationContext _uiSyncContext;
     public MainWindow()
     {
         InitializeComponent();

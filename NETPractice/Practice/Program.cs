@@ -1,11 +1,13 @@
 ﻿using System;
+using System.Runtime.CompilerServices;
+using System.Threading.Tasks;
 
 namespace Practice;
 
 internal static partial class Program
 {
-    private static void Main(string[] args)
+    public static async Task Main(string[] args)
     {
-        SignalingRun();
+        await DisplayPrimeCounts();        
     }
 }

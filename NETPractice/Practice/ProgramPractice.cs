@@ -6,6 +6,7 @@ using PracticeLib.Generics;
 using System.Threading.Tasks;
 using System.Collections.Generic;
 using System.Threading;
+using System.Linq;
 
 namespace Practice
 {
@@ -368,5 +369,77 @@ namespace Practice
             Thread.Sleep(2000);
             signal.Set(); // “Open” the signal
         }
+
+        public static void AwaitTaskRun()
+        {
+            Task task = Task.Run(() =>
+            {
+                Thread.Sleep(2000);
+                Console.WriteLine("Foo");
+            });
+            Console.WriteLine(task.IsCompleted); // False
+            task.Wait(); // Blocks until task is complete
+        }
+
+        public static void TaskReturningValue()
+        {
+            Task<int> primeNumberTask = Task.Run(() =>
+                Enumerable.Range(2, 3000000).Count(n =>
+                Enumerable.Range(2, (int)Math.Sqrt(n) - 1).All(i => n % i > 0)));
+            Console.WriteLine("Task running...");
+            Console.WriteLine("The answer is " + primeNumberTask.Result); // if task is not finished it will block the thread primeNumberTask
+        }
+
+        public static void TaskContinuationsUsingAwaiter()
+        {
+            Task<int> primeNumberTask = Task.Run(() =>
+             Enumerable.Range(2, 3000000).Count(n =>
+             Enumerable.Range(2, (int)Math.Sqrt(n) - 1).All(i => n % i > 0)));
+            var awaiter = primeNumberTask.GetAwaiter();
+            awaiter.OnCompleted(() =>
+            {
+                int result = awaiter.GetResult();
+                Console.WriteLine(result); // Writes result
+            });
+        }
+
+        public static void TaskContinuationUsingContinueWith()
+        {
+            Task<int> primeNumberTask = Task.Run(() =>
+             Enumerable.Range(2, 3000000).Count(n =>
+             Enumerable.Range(2, (int)Math.Sqrt(n) - 1).All(i => n % i > 0)));
+            primeNumberTask.ContinueWith(antecedent =>
+            {
+                int result = antecedent.Result;
+                Console.WriteLine(result); // Writes 123
+            });
+        }
+
+        public static void TaskCompletionSourceRun()
+        {
+            var tcs = new TaskCompletionSource<int>();
+            Task<int> task = tcs.Task; // Our "slave" task.
+            new Thread(() => { Thread.Sleep(5000); tcs.SetResult(42); }) { IsBackground = true }.Start();
+            Console.WriteLine(task.Result); // 42
+        }
+
+        public static void SyncPrimesRun()
+        {
+            var primes = new PracticeLib.Primes();
+            int countOfPrimesInTheRange = primes.GetPrimesCount(2, 10000000);
+            Console.WriteLine($"The count of prime numbers in a range 2, 10000000 is {countOfPrimesInTheRange}");
+        }
+
+        public static async Task DisplayPrimeCounts()
+        {
+            for (int i = 0; i < 10; i++)
+            {
+                var primeCount = await PracticeLib.Primes.GetPrimesCountAsync(i * 1000000 + 2, 1000000);
+                Console.WriteLine(primeCount +
+                " primes between " + (i * 1000000) + " and " + ((i + 1) * 1000000 - 1));
+            }
+            Console.WriteLine("Done!");
+        }
+
     }
 }
