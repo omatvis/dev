@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 using System.Collections.Generic;
 using System.Threading;
 using System.Linq;
+using System.Net.Http;
 
 namespace Practice
 {
@@ -439,6 +440,14 @@ namespace Practice
                 " primes between " + (i * 1000000) + " and " + ((i + 1) * 1000000 - 1));
             }
             Console.WriteLine("Done!");
+        }
+
+        public static async Task GetAppleHomePageBytesCount()
+        {
+            HttpClient client = new();
+            HttpResponseMessage response = await client.GetAsync("http://www.apple.com/");
+            Console.WriteLine("Apple's home page has {0:N0} bytes.",
+            response.Content.Headers.ContentLength);
         }
 
     }
