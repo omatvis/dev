@@ -450,5 +450,21 @@ namespace Practice
             response.Content.Headers.ContentLength);
         }
 
+        public static void ListOfFloors()
+        {
+            List<string> floors = new()
+            {
+                "Ground",
+                "First",
+                "Second",
+                "Third",
+                "Fourth"
+            };
+            foreach (var floor in floors)
+            {
+                Console.WriteLine(floor);
+            }
+        }
+
     }
 }
