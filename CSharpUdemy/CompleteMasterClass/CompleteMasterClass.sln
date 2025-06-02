@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36109.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "S1L7_HelloWorld", "S1L7_HelloWorld\S1L7_HelloWorld.csproj", "{BEA36DED-DF23-4C01-B5A9-81C83BAA8496}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "S3L76_LandingRocketSimulation", "S3L76_LandingRocketSimulation\S3L76_LandingRocketSimulation.csproj", "{29136B9A-953D-442B-9B3B-6E02EC3754AA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BEA36DED-DF23-4C01-B5A9-81C83BAA8496}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BEA36DED-DF23-4C01-B5A9-81C83BAA8496}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BEA36DED-DF23-4C01-B5A9-81C83BAA8496}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BEA36DED-DF23-4C01-B5A9-81C83BAA8496}.Release|Any CPU.Build.0 = Release|Any CPU
+		{29136B9A-953D-442B-9B3B-6E02EC3754AA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{29136B9A-953D-442B-9B3B-6E02EC3754AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{29136B9A-953D-442B-9B3B-6E02EC3754AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{29136B9A-953D-442B-9B3B-6E02EC3754AA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {34AD91FD-94A0-487A-B18D-991B03763B05}
+	EndGlobalSection
+EndGlobal
