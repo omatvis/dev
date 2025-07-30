@@ -10,6 +10,7 @@
                 int* ptr = &x;
                 *ptr = 1;
                 Console.WriteLine(x);
+                
                 Console.ReadKey();
             }
         }
