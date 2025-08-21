@@ -1,29 +1,24 @@
 ﻿using System;
 using System.Collections.Generic;
-
+using EnumerationAndIterators;
 internal class Program
 {
     private static void Main(string[] args)
     {
-        foreach (int fib in EvenNumbersOnly(Fibs(6)))
+        foreach (int fib in Iterators.EvenNumbersOnly(Iterators.Fibs(6)))
             Console.Write(fib + " ");
-    }
 
-    static IEnumerable<int> Fibs(int fibCount)
-    {
-        for (int i = 0, prevFib = 1, curFib = 1; i < fibCount; i++)
+        SequenceOfEntities entities = new SequenceOfEntities();
+        entities.Add(new Entity(1, "Entity1"));
+        entities.Add(new Entity(2, "Entity2"));
+        entities.Add(new Entity(3, "Entity3"));
+
+        Console.WriteLine();
+        foreach (Entity entity in entities)
         {
-            yield return prevFib;
-            int newFib = prevFib + curFib;
-            prevFib = curFib;
-            curFib = newFib;
+            Console.WriteLine($"ID: {entity.Id}, Name: {entity.Name}");
         }
-    }
-
-    static IEnumerable<int> EvenNumbersOnly(IEnumerable<int> sequence)
-    {
-        foreach (int x in sequence)
-            if ((x % 2) == 0)
-                yield return x;
+        Console.WriteLine("Total Entities: " + entities.Count);
+        Console.ReadKey();
     }
 }

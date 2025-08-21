@@ -1,0 +1,27 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36401.2 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{54A90642-561A-4BB1-A94E-469ADEE60C69}") = "PromptEngineering", "PromptEngineering.esproj", "{9FE223FF-8E33-8901-4BB0-F4D0AF48BFCE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9FE223FF-8E33-8901-4BB0-F4D0AF48BFCE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9FE223FF-8E33-8901-4BB0-F4D0AF48BFCE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9FE223FF-8E33-8901-4BB0-F4D0AF48BFCE}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{9FE223FF-8E33-8901-4BB0-F4D0AF48BFCE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9FE223FF-8E33-8901-4BB0-F4D0AF48BFCE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9FE223FF-8E33-8901-4BB0-F4D0AF48BFCE}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5B6D8F47-16E2-4B35-B0B1-DB58DE96FAE7}
+	EndGlobalSection
+EndGlobal

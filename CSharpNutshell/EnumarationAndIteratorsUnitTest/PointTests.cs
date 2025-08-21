@@ -1,4 +1,14 @@
-using System;
+/// <summary>
+/// Defines an immutable two-dimensional point with validation and efficient distance calculation.
+/// </summary>
+/// <remarks>
+/// The <c>Point</c> record provides value-based equality, input validation for coordinates, lazy distance calculation from the origin, and deconstruction support.
+/// </remarks>
+
+// Ensure the xUnit.net test framework is referenced in your project.
+// If you are using a .NET Core or .NET 5+ project, run the following command in your terminal:
+// dotnet add package xunit
+
 using Xunit;
 
 public class PointTests
