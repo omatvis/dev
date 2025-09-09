@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "S1L7_HelloWorld", "S1L7_Hel
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "S3L76_LandingRocketSimulation", "S3L76_LandingRocketSimulation\S3L76_LandingRocketSimulation.csproj", "{29136B9A-953D-442B-9B3B-6E02EC3754AA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "S12L241_Regex_email", "S12L241_Regex_email\S12L241_Regex_email.csproj", "{8049CDFB-D505-44BE-B870-5A060D99294C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{29136B9A-953D-442B-9B3B-6E02EC3754AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{29136B9A-953D-442B-9B3B-6E02EC3754AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{29136B9A-953D-442B-9B3B-6E02EC3754AA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8049CDFB-D505-44BE-B870-5A060D99294C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8049CDFB-D505-44BE-B870-5A060D99294C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8049CDFB-D505-44BE-B870-5A060D99294C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8049CDFB-D505-44BE-B870-5A060D99294C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
