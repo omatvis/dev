@@ -28,5 +28,10 @@ namespace S13L251_Recreate_Thsi_GUI
             Grid? mainGrid = FindName("myGrid") as Grid;
             mainGrid?.Children.Add(button);
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show("You clicked the button!");
+        }
     }
 }

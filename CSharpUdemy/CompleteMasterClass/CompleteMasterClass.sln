@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "S13L242_WPFLearningApp", "W
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "S13L251_Recreate_Thsi_GUI", "S13L251_Recreate_Thsi_GUI\S13L251_Recreate_Thsi_GUI.csproj", "{07A8314F-6681-40FF-A579-B5CEB4A28031}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "s13L257_TodoApp", "s13L257_TodoApp\s13L257_TodoApp.csproj", "{A503C2FB-7C06-4EBB-954C-B997CA012826}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{07A8314F-6681-40FF-A579-B5CEB4A28031}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{07A8314F-6681-40FF-A579-B5CEB4A28031}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{07A8314F-6681-40FF-A579-B5CEB4A28031}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A503C2FB-7C06-4EBB-954C-B997CA012826}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A503C2FB-7C06-4EBB-954C-B997CA012826}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A503C2FB-7C06-4EBB-954C-B997CA012826}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A503C2FB-7C06-4EBB-954C-B997CA012826}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

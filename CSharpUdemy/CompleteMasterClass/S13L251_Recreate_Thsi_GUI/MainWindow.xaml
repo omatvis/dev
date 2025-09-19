@@ -23,7 +23,7 @@
             <RowDefinition Height="50"/>
             <RowDefinition Height="10"/>
          </Grid.RowDefinitions>
-        <Button Grid.Column="2" Content="A" Grid.Row="3"/>
+        <Button Grid.Column="2" Content="A" Grid.Row="3" Click="Button_Click"/>
         <Label Grid.Column="2" Content="Title of App"  Grid.Row="1"/>
         <Label Grid.Column="2" Grid.ColumnSpan="3" Content="Sample Text Sample Text Sample Text Sample Text Sample Text"  Grid.Row="2"/>
     </Grid>
