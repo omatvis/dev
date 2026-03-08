@@ -1,6 +1,0 @@
-{
-    "ConnectionStrings": {
-        "NorthwindDb": "Server=127.0.0.1;Database=Northwind;User Id={DB_USER};Password={DB_PASSWORD};TrustServerCertificate=True;MultipleActiveResultSets=True"
-    }
-}
-   
