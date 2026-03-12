@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="LocalSharedStates/LocalSharedStates.csproj" />
+  <Project Path="ThreadStart/ThreadStart.csproj" />
+</Solution>
