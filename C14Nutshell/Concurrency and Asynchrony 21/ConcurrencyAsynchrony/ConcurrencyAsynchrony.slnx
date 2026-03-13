@@ -1,4 +1,7 @@
 <Solution>
   <Project Path="LocalSharedStates/LocalSharedStates.csproj" />
+  <Project Path="PrinciplesofAsynchrony/PrinciplesofAsynchrony.csproj" Id="5ae37bdf-2478-4a34-bb23-4c41c746c0a3" />
+  <Project Path="TaskContinuation/TaskContinuation.csproj" Id="a7a2405c-8241-4db9-90ff-ace13ad8cbb6" />
+  <Project Path="Tasks/Tasks.csproj" Id="b877f112-8229-4001-ad8e-e855cfcda78b" />
   <Project Path="ThreadStart/ThreadStart.csproj" />
 </Solution>
