@@ -16,8 +16,8 @@ namespace Events
         {
             var newRow = Colour switch
             {
-                FigureColour.White => (ChessPoint.Rank)((int)Position.Row + 1),
-                FigureColour.Black => (ChessPoint.Rank)((int)Position.Row - 1),
+                FigureColour.White => Position.Row + 1,
+                FigureColour.Black => Position.Row - 1,
                 _ => Position.Row
             };
 
