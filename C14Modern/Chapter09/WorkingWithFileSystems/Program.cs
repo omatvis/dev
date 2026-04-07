@@ -115,7 +115,7 @@ partial class Program
         WriteLine($"Does it exist? {Path.Exists(newFolder)}");
 
         WriteLine("Creating it...");
-        CreateDirectory(newFolder);
+        var directoryCreated = CreateDirectory(newFolder);
 
         // Let's use the Directory.Exists method this time.
         WriteLine($"Does it exist? {Directory.Exists(newFolder)}");
@@ -124,7 +124,11 @@ partial class Program
         ReadKey(intercept: true);
 
         WriteLine("Deleting it...");
-        Delete(newFolder, recursive: true);
+        if (!IsCurrentDirectoryInside(newFolder)) {
+            ClearReadOnlyAttributesRecursively(newFolder);
+            Delete(newFolder, recursive: true);
+        }
+        
 
         WriteLine($"Does it exist? {Path.Exists(newFolder)}");
         #endregion
@@ -196,4 +200,6 @@ partial class Program
         WriteLine($"  Has readonly set to {info.IsReadOnly}.");
         #endregion
     }
+
+ 
 }
