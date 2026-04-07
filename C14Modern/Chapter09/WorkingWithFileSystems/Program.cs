@@ -75,7 +75,7 @@ partial class Program
         drives.AddColumn(new TableColumn("[blue]SIZE (BYTES)[/]").RightAligned());
         drives.AddColumn(new TableColumn("[blue]FREE SPACE[/]").RightAligned());
 
-        foreach (DriveInfo drive in DriveInfo.GetDrives())
+        foreach (System.IO.DriveInfo drive in System.IO.DriveInfo.GetDrives())
         {
             if (drive.IsReady)
             {
@@ -104,21 +104,21 @@ partial class Program
         #region managing directories
         SectionTitle("Managing directories");
 
-        string newFolder = Combine(
-            GetFolderPath(SpecialFolder.Personal),
+        string newFolder = System.IO.Path.Combine(
+            System.Environment.GetFolderPath(System.Environment.SpecialFolder.Personal),
             "NewFolder");
 
         WriteLine($"Working with: {newFolder}");
 
         // We must explicitly say which Exists method to use
         // because we statically imported both Path and Directory.
-        WriteLine($"Does it exist? {Path.Exists(newFolder)}");
+        WriteLine($"Does it exist? {System.IO.Path.Exists(newFolder)}");
 
         WriteLine("Creating it...");
-        var directoryCreated = CreateDirectory(newFolder);
+        System.IO.Directory.CreateDirectory(newFolder);
 
         // Let's use the Directory.Exists method this time.
-        WriteLine($"Does it exist? {Directory.Exists(newFolder)}");
+        WriteLine($"Does it exist? {System.IO.Directory.Exists(newFolder)}");
 
         Write("Confirm the directory exists, and then press any key.");
         ReadKey(intercept: true);
@@ -126,11 +126,11 @@ partial class Program
         WriteLine("Deleting it...");
         if (!IsCurrentDirectoryInside(newFolder)) {
             ClearReadOnlyAttributesRecursively(newFolder);
-            Delete(newFolder, recursive: true);
+            System.IO.Directory.Delete(newFolder, recursive: true);
         }
         
 
-        WriteLine($"Does it exist? {Path.Exists(newFolder)}");
+        WriteLine($"Does it exist? {System.IO.Path.Exists(newFolder)}");
         #endregion
 
         #region Managing files
@@ -138,28 +138,26 @@ partial class Program
 
         // Define a directory path to output files starting
         // in the user's folder.
-        string dir = Combine(
-            GetFolderPath(SpecialFolder.Personal),
+        string dir = System.IO.Path.Combine(
+            System.Environment.GetFolderPath(System.Environment.SpecialFolder.Personal),
             "OutputFiles");
 
-        CreateDirectory(dir);
+        System.IO.Directory.CreateDirectory(dir);
 
         // Define file paths.
-        string textFile = Combine(dir, "Dummy.txt");
-        string backupFile = Combine(dir, "Dummy.bak");
+        string textFile = System.IO.Path.Combine(dir, "Dummy.txt");
+        string backupFile = System.IO.Path.Combine(dir, "Dummy.bak");
 
         WriteLine($"Working with: {textFile}");
-        WriteLine($"Does it exist? {File.Exists(textFile)}");
-
+        WriteLine($"Does it exist? {System.IO.File.Exists(textFile)}");
         // Create a new text file and write a line to it.
-        StreamWriter textWriter = File.CreateText(textFile);
+        StreamWriter textWriter = System.IO.File.CreateText(textFile);
         textWriter.WriteLine("Hello, C#!");
         textWriter.Close(); // Close file and release resources.
 
-        WriteLine($"Does it exist? {File.Exists(textFile)}");
-
+        WriteLine($"Does it exist? {System.IO.File.Exists(textFile)}");
         // Copy the file, and overwrite if it already exists.
-        File.Copy(
+        System.IO.File.Copy(
             sourceFileName: textFile,
             destFileName: backupFile,
             overwrite: true);
@@ -182,18 +180,18 @@ partial class Program
 
         #region Managing paths
         SectionTitle("Managing paths");
-        WriteLine($"Folder Name: {GetDirectoryName(textFile)}");
-        WriteLine($"File Name: {GetFileName(textFile)}");
+        WriteLine($"Folder Name: {System.IO.Path.GetDirectoryName(textFile)}");
+        WriteLine($"File Name: {System.IO.Path.GetFileName(textFile)}");
         WriteLine("File Name without Extension: {0}",
-          GetFileNameWithoutExtension(textFile));
-        WriteLine($"File Extension: {GetExtension(textFile)}");
-        WriteLine($"Random File Name: {GetRandomFileName()}");
-        WriteLine($"Temporary File Name: {GetTempFileName()}");
+          System.IO.Path.GetFileNameWithoutExtension(textFile));
+        WriteLine($"File Extension: {System.IO.Path.GetExtension(textFile)}");
+        WriteLine($"Random File Name: {System.IO.Path.GetRandomFileName()}");
+        WriteLine($"Temporary File Name: {System.IO.Path.GetTempFileName()}");
         #endregion
 
         #region Getting file and directory information
         SectionTitle("Getting file information");
-        FileInfo info = new(backupFile);
+        System.IO.FileInfo info = new(backupFile);
         WriteLine($"{backupFile}:");
         WriteLine($"  Contains {info.Length} bytes.");
         WriteLine($"  Last accessed: {info.LastAccessTime}");
