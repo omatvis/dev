@@ -21,6 +21,7 @@
 
             ConfigureConsole();
             QueryingCategories();
+            FilteredIncludes();
         }
     }  
 }
