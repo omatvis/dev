@@ -75,7 +75,7 @@ public partial class NorthwindContext : DbContext
     {
         var configuration = new ConfigurationBuilder().AddUserSecrets<NorthwindContext>().Build();
         var saSqlPwd = configuration["env:SA_SQL_PWD"];
-        optionsBuilder.UseSqlServer($"Server=172.26.219.91;Database=Northwind;User Id=sa;Password={saSqlPwd};Encrypt=True;TrustServerCertificate=True;MultipleActiveResultSets=True;Connect Timeout=30");
+        optionsBuilder.UseSqlServer($"Server=127.0.0.1;Database=Northwind;User Id=sa;Password={saSqlPwd};Encrypt=True;TrustServerCertificate=True;MultipleActiveResultSets=True;Connect Timeout=30");
         optionsBuilder.LogTo(NorthwindContextLogger.WriteLine, [Microsoft.EntityFrameworkCore.Diagnostics.RelationalEventId.CommandExecuting]);
     }
     protected override void OnModelCreating(ModelBuilder modelBuilder)

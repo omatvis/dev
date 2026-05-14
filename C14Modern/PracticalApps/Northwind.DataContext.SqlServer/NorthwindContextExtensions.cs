@@ -13,8 +13,11 @@ namespace Northwind.EntityModels
             return services.AddDbContext<NorthwindContext>(options =>
                 { 
                     options.UseSqlServer(connectionString);
-                    options.LogTo(NorthwindContextLogger.WriteLine, [Microsoft.EntityFrameworkCore.Diagnostics.RelationalEventId.CommandExecuting]);
-                },ServiceLifetime.Transient, ServiceLifetime.Transient);
+                    options.LogTo(NorthwindContextLogger.WriteLine, 
+                                 [Microsoft.EntityFrameworkCore.Diagnostics.RelationalEventId.CommandExecuting]);
+                },
+                ServiceLifetime.Transient, 
+                ServiceLifetime.Transient);
         }
     }
 }
