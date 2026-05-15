@@ -5,6 +5,7 @@ namespace Northind.Web
         public static void Main(string[] args)
         {
             var builder = WebApplication.CreateBuilder(args);
+            builder.Services.AddRazorPages();
             var app = builder.Build();
 
             #region Configure the HTTP pipeline and routes
@@ -13,6 +14,7 @@ namespace Northind.Web
             app.UseDefaultFiles();
             app.UseStaticFiles();
 
+            app.MapRazorPages();
             app.MapGet("/hello", () => $"Environment is {app.Environment.EnvironmentName}");
             #endregion
 
