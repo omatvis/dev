@@ -8,7 +8,7 @@ namespace Northwind.EntityModels
 {
     public static class NorthwindContextExtensions
     {
-        public static IServiceCollection AddNorthwindContext(this IServiceCollection services, string connectionString)
+        public static IServiceCollection AddNorthwindContext(this IServiceCollection services, string connectionString = "")
         {
             return services.AddDbContext<NorthwindContext>(options =>
                 { 

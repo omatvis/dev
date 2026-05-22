@@ -3,4 +3,5 @@
   <Project Path="Northwind.DataContext.SqlServer/Northwind.DataContext.SqlServer.csproj" />
   <Project Path="Northwind.EntityModels.SqlServer/Northwind.EntityModels.SqlServer.csproj" />
   <Project Path="Northwind.UnitTests/Northwind.UnitTests.csproj" Id="1a75d469-ab9c-41f9-8146-c54bb7835ac0" />
+  <Project Path="Northwind.WebApi/Northwind.WebApi.csproj" Id="137afce9-b564-47ca-a81a-73a505a902ca" />
 </Solution>
