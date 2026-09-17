@@ -1,4 +1,5 @@
 <Solution>
   <Project Path="OOP/OOP.csproj" />
   <Project Path="PacktLibraryNetStandard2/PacktLibraryNetStandard2.csproj" />
+  <Project Path="RequiredInitialization/RequiredInitialization.csproj" Id="f3c09451-174f-4435-8fb7-f126e1103172" />
 </Solution>

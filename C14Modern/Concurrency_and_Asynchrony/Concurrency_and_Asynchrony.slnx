@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="../ConcurrencyAsynchronyLib/ConcurrencyAsynchronyLib.csproj" />
+  <Project Path="Concurrency_and_Asynchrony.csproj" />
+</Solution>
