@@ -14,6 +14,15 @@
             pawn.MoveForward();
 
             Console.WriteLine("End of pawn movement!");
+
+            // declare local delegate variable
+            Action? Multi = null;
+            void MultiMethod1() => Console.WriteLine("Multi method 1");
+            void MultiMethod2() => Console.WriteLine("Multi method 2");
+            Multi += MultiMethod1;
+            Multi += MultiMethod2;
+            Multi?.Invoke();
+
         }
 
         public static void OnMove(object? sender, EventArgs e)

@@ -1,3 +1,5 @@
 <Solution>
   <Project Path="Events/Events.csproj" />
+  <Project Path="Extensions/Extensions.csproj" Id="3320dc22-ee73-45e7-9405-75086e507bcc" />
+  <Project Path="Interfaces/Interfaces.csproj" Id="e4e10229-553f-459d-a6d1-9265a0271977" />
 </Solution>
