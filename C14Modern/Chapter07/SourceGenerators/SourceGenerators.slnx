@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="../Packt.SourceGenerations/Packt.SourceGenerations.csproj" />
+  <Project Path="SourceGenerators.csproj" />
+</Solution>
