@@ -1,4 +1,6 @@
 <Solution>
   <Project Path="Northwind.DataContext.SqlServer/Northwind.DataContext.SqlServer.csproj" />
   <Project Path="Northwind.EntityModels.SQLServer/Northwind.EntityModels.SqlServer.csproj" />
+  <Project Path="Northwind.UnitTests/Northwind.UnitTests.csproj" Id="9f70ed2c-1c33-4385-ae59-d766ae846361" />
+  <Project Path="Northwind.Web/Northwind.Web.csproj" Id="9db1c900-5877-4b5a-810f-b6db05a4e074" />
 </Solution>

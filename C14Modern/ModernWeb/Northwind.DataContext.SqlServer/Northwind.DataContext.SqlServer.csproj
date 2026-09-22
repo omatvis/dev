@@ -18,5 +18,11 @@
 	<ItemGroup>
 		<ProjectReference Include="..\Northwind.EntityModels.SqlServer\Northwind.EntityModels.SqlServer.csproj" />
 	</ItemGroup>
-	
+
+	<ItemGroup>
+		<None Update="appsettings.json">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</None>
+	</ItemGroup>
+
 </Project>
