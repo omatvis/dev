@@ -1,0 +1,12 @@
+@TodoAPI_HostAddress = https://localhost:7038
+
+POST {{TodoAPI_HostAddress}}/todoitems
+Content-Type: application/json
+Authorization: Bearer Ua;%k$G7%L5CMC<3/UlrXk>/qc]4Ee25L]>!{)AQXZg
+
+{
+  "name":"walk dog",
+  "isComplete":true
+}
+
+###
