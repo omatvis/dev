@@ -1,5 +1,6 @@
 ﻿using System.Diagnostics;
-using System.Linq; // add this at file top
+using System.Linq;
+using System.Linq.Expressions; // add this at file top
 
 namespace HttpClientSample
 {
@@ -22,6 +23,13 @@ namespace HttpClientSample
 
             var cancelRequest = GetAsyncCancelledRequest(@"http://linqpad.net");
             Console.WriteLine(await cancelRequest);
+
+            var responseMessage = await GetAsyncResponseMessage(@"http://google.com");
+            if (responseMessage != null)
+            {
+                string? content = await GetAsyncString(responseMessage);
+                Console.WriteLine(content ?? "[no content]");
+            }
         }
 
         async static Task<string?> GetSiteContent(string url)
@@ -45,7 +53,7 @@ namespace HttpClientSample
                 return null;
             }
         }
-        
+
         async static Task<string?> GetSiteContentFromTwoSites(string url1, string url2)
         {
             using var client = new HttpClient();
@@ -96,6 +104,33 @@ namespace HttpClientSample
                 Console.WriteLine($"Request failed: {ex.Message}");
                 return null;
             }
+        }
+
+        async static Task<HttpResponseMessage?> GetAsyncResponseMessage(string url)
+        {
+            try
+            { 
+                HttpClient client = new HttpClient();
+                HttpResponseMessage response = await client.GetAsync(url);
+                return response;                
+            }
+            catch (HttpRequestException ex)
+            {
+                Console.WriteLine($"Request failed: {ex.Message}");
+                return null;
+            }
+            catch (ArgumentNullException ex)
+            {
+                Console.WriteLine($"Request failed: {ex.Message}");
+                return null;
+            }
+        }
+
+        async static Task<string> GetAsyncString(HttpResponseMessage responseObj)
+        {
+            ArgumentNullException.ThrowIfNull(responseObj, nameof(responseObj));
+            responseObj.EnsureSuccessStatusCode();
+            return await responseObj.Content.ReadAsStringAsync();
         }
     }
 }
