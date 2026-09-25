@@ -95,7 +95,7 @@ AI data engineering becomes much easier once those are solid.
 - You can design safer ingestion and retrieval pipelines
 
 #### Resources
-- Azure AI guidance and responsible AI: <https://learn.microsoft.com/azure/architecture/ai-ml/>
+- Azure AI/ML architecture guidance: <https://learn.microsoft.com/azure/architecture/ai-ml/>
 - Microsoft Responsible AI resources: <https://www.microsoft.com/ai/responsible-ai>
 - NIST AI Risk Management Framework: <https://www.nist.gov/itl/ai-risk-management-framework>
 - Databricks governance and Unity Catalog docs: <https://docs.databricks.com/en/data-governance/unity-catalog/index.html>

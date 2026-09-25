@@ -31,7 +31,7 @@ Use this when you want a direct association between a learning goal and the best
 | Refresh advanced SQL | [T-SQL window functions / OVER clause](https://learn.microsoft.com/sql/t-sql/queries/select-over-clause-transact-sql) |
 | Learn pandas for local data work | [pandas getting started](https://pandas.pydata.org/docs/getting_started/index.html) |
 | Learn PySpark | [PySpark getting started](https://spark.apache.org/docs/latest/api/python/getting_started/index.html) · [PySpark DataFrame quickstart](https://spark.apache.org/docs/latest/api/python/getting_started/quickstart_df.html) |
-| Understand Spark concepts | [Spark SQL guide](https://spark.apache.org/docs/latest/sql-programming-guide.html) |
+| Understand Spark concepts | [Spark overview](https://spark.apache.org/docs/latest/) · [RDD programming guide](https://spark.apache.org/docs/latest/rdd-programming-guide.html) |
 | Learn Databricks basics | [Databricks getting started](https://docs.databricks.com/en/getting-started/index.html) |
 | Understand Lakehouse / Medallion architecture | [Lakehouse architecture](https://docs.databricks.com/en/lakehouse-architecture/index.html) · [Medallion architecture](https://docs.databricks.com/en/lakehouse/medallion.html) |
 | Learn Delta Lake | [Delta Lake docs](https://docs.delta.io/latest/index.html) · [Delta quick start](https://docs.delta.io/latest/quick-start.html) |

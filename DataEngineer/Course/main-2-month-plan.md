@@ -12,6 +12,8 @@ This plan is optimized for your background:
 - **4-5 hrs** hands-on coding
 - **1-2 hrs** recap, notes, and small review tasks
 
+> The links placed directly on each **Topics** line are the primary learning links for that exact topic.
+
 ---
 
 ## Week 1 - Python foundations for Data Engineering
@@ -55,7 +57,7 @@ This plan is optimized for your background:
 - Pandas basics for local inspection and cleanup — [pandas getting started](https://pandas.pydata.org/docs/getting_started/index.html)
 - Working with Parquet vs CSV at a high level — [Parquet overview](https://parquet.apache.org/docs/overview/), [pandas I/O tools](https://pandas.pydata.org/docs/user_guide/io.html)
 - Logging, configuration, reusable functions — [logging HOWTO](https://docs.python.org/3/howto/logging.html), [Python modules](https://docs.python.org/3/tutorial/modules.html)
-- Intro to data quality checks — [Microsoft Learn data modules](https://learn.microsoft.com/training/browse/?terms=data%20engineering), [Great Expectations overview](https://docs.greatexpectations.io/docs/core/introduction/introduction/)
+- Intro to data quality checks — [Great Expectations overview](https://docs.greatexpectations.io/docs/core/introduction/introduction/), [Expectation concepts](https://docs.greatexpectations.io/docs/core/define_expectations/learn_expectations/expectation_overview/)
 
 ### Practical exercises
 - Load a CSV dataset with pandas and clean nulls / data types
@@ -83,7 +85,7 @@ This plan is optimized for your background:
 - Start using PySpark DataFrames for transformations
 
 ### Topics
-- Spark architecture, driver/executors, partitions — [Spark overview](https://spark.apache.org/docs/latest/), [RDD programming guide](https://spark.apache.org/docs/latest/rdd-programming-guide.html)
+- Spark architecture, driver/executors, partitions — [Spark overview](https://spark.apache.org/docs/latest/cluster-overview.html), [RDD programming guide](https://spark.apache.org/docs/latest/rdd-programming-guide.html)
 - Lazy evaluation, transformations vs actions — [RDD programming guide](https://spark.apache.org/docs/latest/rdd-programming-guide.html), [Spark SQL guide](https://spark.apache.org/docs/latest/sql-programming-guide.html)
 - PySpark DataFrames, schema, filtering, joins, aggregations — [PySpark getting started](https://spark.apache.org/docs/latest/api/python/getting_started/index.html), [DataFrame quickstart](https://spark.apache.org/docs/latest/api/python/getting_started/quickstart_df.html)
 - Read/write CSV and Parquet — [Spark SQL data sources](https://spark.apache.org/docs/latest/sql-data-sources.html), [Parquet files](https://spark.apache.org/docs/latest/sql-data-sources-parquet.html)
@@ -103,7 +105,7 @@ This plan is optimized for your background:
 - PySpark getting started: <https://spark.apache.org/docs/latest/api/python/getting_started/index.html>
 - PySpark DataFrame quickstart: <https://spark.apache.org/docs/latest/api/python/getting_started/quickstart_df.html>
 - Spark SQL guide: <https://spark.apache.org/docs/latest/sql-programming-guide.html>
-- Databricks Spark concepts: <https://docs.databricks.com/en/lakehouse-architecture/index.html>
+- Databricks Lakehouse architecture: <https://docs.databricks.com/en/lakehouse-architecture/index.html>
 
 ---
 
@@ -117,7 +119,7 @@ This plan is optimized for your background:
 - Databricks workspace, notebooks, clusters, jobs — [Databricks getting started](https://docs.databricks.com/en/getting-started/index.html), [Databricks jobs](https://docs.databricks.com/en/jobs/index.html)
 - Delta Lake basics: ACID tables, schema enforcement, versioning — [Delta Lake docs](https://docs.delta.io/latest/index.html), [Delta batch](https://docs.delta.io/latest/delta-batch.html)
 - Bronze / Silver / Gold architecture — [medallion architecture](https://docs.databricks.com/en/lakehouse/medallion.html)
-- Basic notebook organization and parameterization — [Databricks notebooks](https://docs.databricks.com/en/notebooks/index.html), [notebook workflows](https://docs.databricks.com/en/notebooks/notebook-workflows.html)
+- Basic notebook organization and parameterization — [Databricks notebooks](https://docs.databricks.com/en/notebooks/index.html), [Databricks widgets](https://docs.databricks.com/en/notebooks/widgets.html)
 
 ### Practical exercises
 - Create a notebook that ingests raw data into a Bronze layer
@@ -146,9 +148,9 @@ This plan is optimized for your background:
 
 ### Topics
 - ADF concepts: linked services, datasets, pipelines, activities, triggers — [ADF introduction](https://learn.microsoft.com/azure/data-factory/introduction), [pipelines and activities concepts](https://learn.microsoft.com/azure/data-factory/concepts-pipelines-activities)
-- Copy activity and basic parameterization — [copy activity overview](https://learn.microsoft.com/azure/data-factory/copy-activity-overview), [parameters and expressions](https://learn.microsoft.com/azure/data-factory/how-to-expression-language-functions)
+- Copy activity and basic parameterization — [copy activity overview](https://learn.microsoft.com/azure/data-factory/copy-activity-overview), [parameters and variables](https://learn.microsoft.com/azure/data-factory/concepts-parameters-variables)
 - Monitoring runs and debugging failures — [monitor visually](https://learn.microsoft.com/azure/data-factory/monitor-visually), [troubleshoot ADF](https://learn.microsoft.com/azure/data-factory/data-factory-troubleshoot-guide)
-- Positioning ADF alongside Databricks — [Microsoft Learn ADF module](https://learn.microsoft.com/training/modules/introduction-to-azure-data-factory/), [Azure Well-Architected data analytics guidance](https://learn.microsoft.com/azure/well-architected/service-guides/data-analytics)
+- Positioning ADF alongside Databricks — [Azure Data Factory module](https://learn.microsoft.com/training/modules/introduction-to-azure-data-factory/), [Azure Databricks documentation](https://learn.microsoft.com/azure/databricks/)
 
 ### Practical exercises
 - Design a simple ADF pipeline to move source data into a landing zone
@@ -241,7 +243,7 @@ Build a small **lakehouse pipeline**:
 ### Topics
 - Review weak spots in Python, PySpark, Delta Lake, and ADF — [Python tutorial](https://docs.python.org/3/tutorial/), [PySpark getting started](https://spark.apache.org/docs/latest/api/python/getting_started/index.html), [Delta Lake docs](https://docs.delta.io/latest/index.html), [Azure Data Factory docs](https://learn.microsoft.com/azure/data-factory/)
 - Portfolio polish and concise documentation — [about READMEs](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-readmes), [writing on GitHub](https://docs.github.com/en/get-started/writing-on-github)
-- Interview storytelling: project, tradeoffs, and debugging examples — [Azure Well-Architected data analytics guidance](https://learn.microsoft.com/azure/well-architected/service-guides/data-analytics)
+- Interview storytelling: project, tradeoffs, and debugging examples — [STAR interview method](https://www.indeed.com/career-advice/interviewing/star-interview-method), [Azure Well-Architected data analytics guidance](https://learn.microsoft.com/azure/well-architected/service-guides/data-analytics)
 - Certification prep strategy for the next 2-4 weeks after the course — [Databricks certification page](https://www.databricks.com/learn/certification/data-engineer-associate), [Databricks training catalog](https://www.databricks.com/learn/training/home)
 
 ### Practical exercises
@@ -258,7 +260,7 @@ Build a small **lakehouse pipeline**:
 ### Resources
 - Databricks certification page: <https://www.databricks.com/learn/certification/data-engineer-associate>
 - Databricks documentation home: <https://docs.databricks.com/en/index.html>
-- Microsoft Learn interview-relevant Azure topics: <https://learn.microsoft.com/training/>
+- Microsoft Learn training catalog: <https://learn.microsoft.com/training/>
 - Azure Data Factory documentation home: <https://learn.microsoft.com/azure/data-factory/>
 
 ---
