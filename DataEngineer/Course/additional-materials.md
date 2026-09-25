@@ -48,7 +48,7 @@ Add dbt when you want stronger transformation workflow discipline:
 
 **Resources**
 - dbt docs: <https://docs.getdbt.com/docs/introduction>
-- dbt getting started: <https://docs.getdbt.com/guides/getting-started>
+- dbt guides: <https://docs.getdbt.com/guides>
 - dbt best practices: <https://docs.getdbt.com/best-practices>
 
 ---
