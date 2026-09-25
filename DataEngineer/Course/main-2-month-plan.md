@@ -259,7 +259,7 @@ Build a small **lakehouse pipeline**:
 - Databricks certification page: <https://www.databricks.com/learn/certification/data-engineer-associate>
 - Databricks documentation home: <https://docs.databricks.com/en/index.html>
 - Microsoft Learn interview-relevant Azure topics: <https://learn.microsoft.com/training/>
-- Snowflake key concepts overview: <https://docs.snowflake.com/en/user-guide/intro-key-concepts>
+- Azure Data Factory documentation home: <https://learn.microsoft.com/azure/data-factory/>
 
 ---
 
