@@ -1,0 +1,5 @@
+@TodoControllerAPI_HostAddress = https://localhost:7258
+
+GET {{TodoControllerAPI_HostAddress}}/weatherforecast
+
+###

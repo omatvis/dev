@@ -18,6 +18,19 @@ namespace TodoAPI
             }).AddJwtBearer(JwtBearerDefaults.AuthenticationScheme, options =>
             {
                 var authConfig = builder.Configuration.GetSection("AuthConfiguration");
+                var keyString = authConfig["Key"];
+                if (string.IsNullOrWhiteSpace(keyString))
+                {
+                    throw new InvalidOperationException("Missing required configuration: AuthConfiguration:Key");
+                }
+                var keyBytes = System.Text.Encoding.UTF8.GetBytes(keyString);
+
+                // enforce minimum length for HS256 (32 bytes = 256 bits)
+                if (keyBytes.Length < 32)
+                {
+                    throw new InvalidOperationException("AuthConfiguration:Key must be at least 256 bits (32 bytes).");
+                }
+
                 options.TokenValidationParameters = new Microsoft.IdentityModel.Tokens.TokenValidationParameters
                 {
                     ValidateIssuer = true,
@@ -27,7 +40,7 @@ namespace TodoAPI
                     ValidIssuer = authConfig["Issuer"],
                     ValidAudience = authConfig["Audience"],
                     ClockSkew = TimeSpan.FromSeconds(30),
-                    IssuerSigningKey = new Microsoft.IdentityModel.Tokens.SymmetricSecurityKey(System.Text.Encoding.UTF8.GetBytes(authConfig["Key"]))
+                    IssuerSigningKey = new Microsoft.IdentityModel.Tokens.SymmetricSecurityKey(keyBytes)
                 };
             });
             builder.Services.AddAuthorization();

@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="AddressesAndPorts/AddressesAndPorts.csproj" />
+  <Project Path="HttpClient/HttpClient.csproj" />
+</Solution>
