@@ -57,7 +57,7 @@ This plan is optimized for your background:
 - Pandas basics for local inspection and cleanup — [pandas getting started](https://pandas.pydata.org/docs/getting_started/index.html)
 - Working with Parquet vs CSV at a high level — [Parquet overview](https://parquet.apache.org/docs/overview/), [pandas I/O tools](https://pandas.pydata.org/docs/user_guide/io.html)
 - Logging, configuration, reusable functions — [logging HOWTO](https://docs.python.org/3/howto/logging.html), [Python modules](https://docs.python.org/3/tutorial/modules.html)
-- Intro to data quality checks — [Great Expectations overview](https://docs.greatexpectations.io/docs/core/introduction/introduction/), [Expectation concepts](https://docs.greatexpectations.io/docs/core/define_expectations/learn_expectations/expectation_overview/)
+- Intro to data quality checks — [GX Core overview](https://docs.greatexpectations.io/docs/core/introduction/gx_overview/), [Define expectations](https://docs.greatexpectations.io/docs/core/define_expectations/)
 
 ### Practical exercises
 - Load a CSV dataset with pandas and clean nulls / data types
@@ -150,7 +150,7 @@ This plan is optimized for your background:
 - ADF concepts: linked services, datasets, pipelines, activities, triggers — [ADF introduction](https://learn.microsoft.com/azure/data-factory/introduction), [pipelines and activities concepts](https://learn.microsoft.com/azure/data-factory/concepts-pipelines-activities)
 - Copy activity and basic parameterization — [copy activity overview](https://learn.microsoft.com/azure/data-factory/copy-activity-overview), [parameters and variables](https://learn.microsoft.com/azure/data-factory/concepts-parameters-variables)
 - Monitoring runs and debugging failures — [monitor visually](https://learn.microsoft.com/azure/data-factory/monitor-visually), [troubleshoot ADF](https://learn.microsoft.com/azure/data-factory/data-factory-troubleshoot-guide)
-- Positioning ADF alongside Databricks — [Azure Data Factory module](https://learn.microsoft.com/training/modules/introduction-to-azure-data-factory/), [Azure Databricks documentation](https://learn.microsoft.com/azure/databricks/)
+- Positioning ADF alongside Databricks — [Azure Data Factory learning modules](https://learn.microsoft.com/en-us/azure/data-factory/quickstart-learn-modules), [Azure Databricks documentation](https://learn.microsoft.com/azure/databricks/)
 
 ### Practical exercises
 - Design a simple ADF pipeline to move source data into a landing zone
@@ -167,7 +167,7 @@ This plan is optimized for your background:
 - Azure Data Factory introduction: <https://learn.microsoft.com/azure/data-factory/introduction>
 - ADF copy activity overview: <https://learn.microsoft.com/azure/data-factory/copy-activity-overview>
 - ADF concepts and terminology: <https://learn.microsoft.com/azure/data-factory/concepts-pipelines-activities>
-- Microsoft Learn Azure Data Factory training: <https://learn.microsoft.com/training/modules/introduction-to-azure-data-factory/>
+- Microsoft Learn Azure Data Factory training: <https://learn.microsoft.com/en-us/azure/data-factory/quickstart-learn-modules>
 
 ---
 
@@ -179,7 +179,7 @@ This plan is optimized for your background:
 
 ### Topics
 - Incremental loads and idempotent pipeline design — [Delta batch](https://docs.delta.io/latest/delta-batch.html), [Databricks medallion architecture](https://docs.databricks.com/en/lakehouse/medallion.html)
-- Basic data validation and error handling — [Great Expectations overview](https://docs.greatexpectations.io/docs/core/introduction/introduction/), [Python errors and exceptions](https://docs.python.org/3/tutorial/errors.html)
+- Basic data validation and error handling — [GX Core overview](https://docs.greatexpectations.io/docs/core/introduction/gx_overview/), [Python errors and exceptions](https://docs.python.org/3/tutorial/errors.html)
 - Delta Lake concepts most relevant to the associate exam — [Delta Lake docs](https://docs.delta.io/latest/index.html), [Databricks certification page](https://www.databricks.com/learn/certification/data-engineer-associate)
 - Databricks jobs, workflows, and common platform terminology — [Databricks jobs](https://docs.databricks.com/en/jobs/index.html), [Databricks training catalog](https://www.databricks.com/learn/training/home)
 
@@ -229,7 +229,7 @@ Build a small **lakehouse pipeline**:
 
 ### Resources
 - Databricks medallion architecture: <https://docs.databricks.com/en/lakehouse/medallion.html>
-- Azure Well-Architected data guidance: <https://learn.microsoft.com/azure/well-architected/service-guides/data-analytics>
+- Azure analytics architecture guidance: <https://learn.microsoft.com/en-us/azure/architecture/analytics/analytics-get-started>
 - Microsoft Learn data architecture content: <https://learn.microsoft.com/training/paths/azure-data-fundamentals-explore-core-data-concepts/>
 
 ---
@@ -243,7 +243,7 @@ Build a small **lakehouse pipeline**:
 ### Topics
 - Review weak spots in Python, PySpark, Delta Lake, and ADF — [Python tutorial](https://docs.python.org/3/tutorial/), [PySpark getting started](https://spark.apache.org/docs/latest/api/python/getting_started/index.html), [Delta Lake docs](https://docs.delta.io/latest/index.html), [Azure Data Factory docs](https://learn.microsoft.com/azure/data-factory/)
 - Portfolio polish and concise documentation — [about READMEs](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-readmes), [writing on GitHub](https://docs.github.com/en/get-started/writing-on-github)
-- Interview storytelling: project, tradeoffs, and debugging examples — [STAR interview method](https://www.indeed.com/career-advice/interviewing/star-interview-method), [Azure Well-Architected data analytics guidance](https://learn.microsoft.com/azure/well-architected/service-guides/data-analytics)
+- Interview storytelling: project, tradeoffs, and debugging examples — [STAR interview response technique](https://www.indeed.com/career-advice/interviewing/how-to-use-the-star-interview-response-technique), [Azure analytics architecture guidance](https://learn.microsoft.com/en-us/azure/architecture/analytics/analytics-get-started)
 - Certification prep strategy for the next 2-4 weeks after the course — [Databricks certification page](https://www.databricks.com/learn/certification/data-engineer-associate), [Databricks training catalog](https://www.databricks.com/learn/training/home)
 
 ### Practical exercises
