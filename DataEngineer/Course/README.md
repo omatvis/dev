@@ -38,7 +38,7 @@ Use this when you want a direct association between a learning goal and the best
 | Prepare for Databricks Data Engineer Associate | [Certification page](https://www.databricks.com/learn/certification/data-engineer-associate) · [Training catalog](https://www.databricks.com/learn/training/home) |
 | Learn Azure Data Factory | [ADF introduction](https://learn.microsoft.com/azure/data-factory/introduction) · [Copy activity overview](https://learn.microsoft.com/azure/data-factory/copy-activity-overview) · [Pipelines and activities concepts](https://learn.microsoft.com/azure/data-factory/concepts-pipelines-activities) |
 | Learn data modeling for analytics | [Microsoft star schema guidance](https://learn.microsoft.com/power-bi/guidance/star-schema) · [Kimball resources](https://www.kimballgroup.com/data-warehouse-business-intelligence-resources/) |
-| Build basic Snowflake awareness | [Snowflake key concepts](https://docs.snowflake.com/en/user-guide/intro-key-concepts) · [Snowflake getting started](https://docs.snowflake.com/en/user-guide/getting-started) |
+| Build basic Snowflake awareness | [Snowflake key concepts](https://docs.snowflake.com/en/user-guide/intro-key-concepts) · [Snowflake getting started](https://docs.snowflake.com/en/user-guide/getting-started-tutorial) |
 | Learn dbt later | [dbt introduction](https://docs.getdbt.com/docs/introduction) · [dbt guides](https://docs.getdbt.com/guides) |
 | Learn orchestration beyond ADF later | [Apache Airflow docs](https://airflow.apache.org/docs/) |
 | Learn streaming later | [Kafka docs](https://kafka.apache.org/documentation/) · [Spark Structured Streaming guide](https://spark.apache.org/docs/latest/structured-streaming-programming-guide.html) |

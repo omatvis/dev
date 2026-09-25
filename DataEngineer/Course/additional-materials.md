@@ -15,7 +15,7 @@ Learn just enough to understand where Snowflake fits in the modern data stack:
 
 **Resources**
 - Snowflake key concepts: <https://docs.snowflake.com/en/user-guide/intro-key-concepts>
-- Snowflake getting started: <https://docs.snowflake.com/en/user-guide/getting-started>
+- Snowflake getting started: <https://docs.snowflake.com/en/user-guide/getting-started-tutorial>
 - Snowflake documentation home: <https://docs.snowflake.com/en/>
 
 ---
