@@ -12,8 +12,8 @@ A practical 8-week learning plan for moving from software engineering into data 
 ## Suggested order
 
 1. Start with the main plan: [main-2-month-plan.md](./main-2-month-plan.md)
-2. Add the optional AI branch later: [optional-ai-data-engineer.md](./optional-ai-data-engineer.md)
-3. Continue with deeper topics after 2 months: [additional-materials.md](./additional-materials.md)
+2. Continue with deeper topics after 2 months: [additional-materials.md](./additional-materials.md)
+3. Add the optional AI branch later as a specialization: [optional-ai-data-engineer.md](./optional-ai-data-engineer.md)
 
 ## Course structure
 
