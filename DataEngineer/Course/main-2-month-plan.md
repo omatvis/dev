@@ -21,10 +21,10 @@ This plan is optimized for your background:
 - Translate your software engineering skills into data engineering workflows
 
 ### Topics
-- Python setup, virtual environments, package basics
-- Core syntax, functions, modules, exceptions
-- File I/O, JSON, CSV, HTTP requests
-- Quick SQL refresh: CTEs, window functions, aggregations
+- Python setup, virtual environments, package basics — [venv](https://docs.python.org/3/tutorial/venv.html), [packaging guide](https://packaging.python.org/en/latest/tutorials/installing-packages/)
+- Core syntax, functions, modules, exceptions — [Python tutorial](https://docs.python.org/3/tutorial/), [errors and exceptions](https://docs.python.org/3/tutorial/errors.html), [modules](https://docs.python.org/3/tutorial/modules.html)
+- File I/O, JSON, CSV, HTTP requests — [input and output](https://docs.python.org/3/tutorial/inputoutput.html), [json](https://docs.python.org/3/library/json.html), [csv](https://docs.python.org/3/library/csv.html), [Requests quickstart](https://requests.readthedocs.io/en/latest/user/quickstart/)
+- Quick SQL refresh: CTEs, window functions, aggregations — [CTEs](https://learn.microsoft.com/sql/t-sql/queries/with-common-table-expression-transact-sql), [window functions / OVER clause](https://learn.microsoft.com/sql/t-sql/queries/select-over-clause-transact-sql), [aggregate functions](https://learn.microsoft.com/sql/t-sql/functions/aggregate-functions-transact-sql)
 
 ### Practical exercises
 - Read CSV and JSON files with Python
@@ -52,10 +52,10 @@ This plan is optimized for your background:
 - Add basic engineering discipline: logging, structure, repeatability
 
 ### Topics
-- Pandas basics for local inspection and cleanup
-- Working with Parquet vs CSV at a high level
-- Logging, configuration, reusable functions
-- Intro to data quality checks
+- Pandas basics for local inspection and cleanup — [pandas getting started](https://pandas.pydata.org/docs/getting_started/index.html)
+- Working with Parquet vs CSV at a high level — [Parquet overview](https://parquet.apache.org/docs/overview/), [pandas I/O tools](https://pandas.pydata.org/docs/user_guide/io.html)
+- Logging, configuration, reusable functions — [logging HOWTO](https://docs.python.org/3/howto/logging.html), [Python modules](https://docs.python.org/3/tutorial/modules.html)
+- Intro to data quality checks — [Microsoft Learn data modules](https://learn.microsoft.com/training/browse/?terms=data%20engineering), [Great Expectations overview](https://docs.greatexpectations.io/docs/core/introduction/introduction/)
 
 ### Practical exercises
 - Load a CSV dataset with pandas and clean nulls / data types
@@ -83,10 +83,10 @@ This plan is optimized for your background:
 - Start using PySpark DataFrames for transformations
 
 ### Topics
-- Spark architecture, driver/executors, partitions
-- Lazy evaluation, transformations vs actions
-- PySpark DataFrames, schema, filtering, joins, aggregations
-- Read/write CSV and Parquet
+- Spark architecture, driver/executors, partitions — [Spark overview](https://spark.apache.org/docs/latest/), [RDD programming guide](https://spark.apache.org/docs/latest/rdd-programming-guide.html)
+- Lazy evaluation, transformations vs actions — [RDD programming guide](https://spark.apache.org/docs/latest/rdd-programming-guide.html), [Spark SQL guide](https://spark.apache.org/docs/latest/sql-programming-guide.html)
+- PySpark DataFrames, schema, filtering, joins, aggregations — [PySpark getting started](https://spark.apache.org/docs/latest/api/python/getting_started/index.html), [DataFrame quickstart](https://spark.apache.org/docs/latest/api/python/getting_started/quickstart_df.html)
+- Read/write CSV and Parquet — [Spark SQL data sources](https://spark.apache.org/docs/latest/sql-data-sources.html), [Parquet files](https://spark.apache.org/docs/latest/sql-data-sources-parquet.html)
 
 ### Practical exercises
 - Create a local or notebook-based PySpark job
@@ -114,10 +114,10 @@ This plan is optimized for your background:
 - Learn the core lakehouse concepts used in data engineering roles
 
 ### Topics
-- Databricks workspace, notebooks, clusters, jobs
-- Delta Lake basics: ACID tables, schema enforcement, versioning
-- Bronze / Silver / Gold architecture
-- Basic notebook organization and parameterization
+- Databricks workspace, notebooks, clusters, jobs — [Databricks getting started](https://docs.databricks.com/en/getting-started/index.html), [Databricks jobs](https://docs.databricks.com/en/jobs/index.html)
+- Delta Lake basics: ACID tables, schema enforcement, versioning — [Delta Lake docs](https://docs.delta.io/latest/index.html), [Delta batch](https://docs.delta.io/latest/delta-batch.html)
+- Bronze / Silver / Gold architecture — [medallion architecture](https://docs.databricks.com/en/lakehouse/medallion.html)
+- Basic notebook organization and parameterization — [Databricks notebooks](https://docs.databricks.com/en/notebooks/index.html), [notebook workflows](https://docs.databricks.com/en/notebooks/notebook-workflows.html)
 
 ### Practical exercises
 - Create a notebook that ingests raw data into a Bronze layer
@@ -145,10 +145,10 @@ This plan is optimized for your background:
 - Use ADF as a practical movement/orchestration tool, not as your only transformation engine
 
 ### Topics
-- ADF concepts: linked services, datasets, pipelines, activities, triggers
-- Copy activity and basic parameterization
-- Monitoring runs and debugging failures
-- Positioning ADF alongside Databricks
+- ADF concepts: linked services, datasets, pipelines, activities, triggers — [ADF introduction](https://learn.microsoft.com/azure/data-factory/introduction), [pipelines and activities concepts](https://learn.microsoft.com/azure/data-factory/concepts-pipelines-activities)
+- Copy activity and basic parameterization — [copy activity overview](https://learn.microsoft.com/azure/data-factory/copy-activity-overview), [parameters and expressions](https://learn.microsoft.com/azure/data-factory/how-to-expression-language-functions)
+- Monitoring runs and debugging failures — [monitor visually](https://learn.microsoft.com/azure/data-factory/monitor-visually), [troubleshoot ADF](https://learn.microsoft.com/azure/data-factory/data-factory-troubleshoot-guide)
+- Positioning ADF alongside Databricks — [Microsoft Learn ADF module](https://learn.microsoft.com/training/modules/introduction-to-azure-data-factory/), [Azure Well-Architected data analytics guidance](https://learn.microsoft.com/azure/well-architected/service-guides/data-analytics)
 
 ### Practical exercises
 - Design a simple ADF pipeline to move source data into a landing zone
@@ -176,10 +176,10 @@ This plan is optimized for your background:
 - Start explicit preparation for Databricks Data Engineer Associate
 
 ### Topics
-- Incremental loads and idempotent pipeline design
-- Basic data validation and error handling
-- Delta Lake concepts most relevant to the associate exam
-- Databricks jobs, workflows, and common platform terminology
+- Incremental loads and idempotent pipeline design — [Delta batch](https://docs.delta.io/latest/delta-batch.html), [Databricks medallion architecture](https://docs.databricks.com/en/lakehouse/medallion.html)
+- Basic data validation and error handling — [Great Expectations overview](https://docs.greatexpectations.io/docs/core/introduction/introduction/), [Python errors and exceptions](https://docs.python.org/3/tutorial/errors.html)
+- Delta Lake concepts most relevant to the associate exam — [Delta Lake docs](https://docs.delta.io/latest/index.html), [Databricks certification page](https://www.databricks.com/learn/certification/data-engineer-associate)
+- Databricks jobs, workflows, and common platform terminology — [Databricks jobs](https://docs.databricks.com/en/jobs/index.html), [Databricks training catalog](https://www.databricks.com/learn/training/home)
 
 ### Practical exercises
 - Add an incremental or append-only pattern to one pipeline step
@@ -208,11 +208,11 @@ This plan is optimized for your background:
 
 ### Suggested capstone
 Build a small **lakehouse pipeline**:
-- **Source**: CSV files plus one API or second file source
-- **Landing/Bronze**: raw ingestion
-- **Silver**: cleaned, typed, deduplicated data
-- **Gold**: simple analytics-friendly output such as customer/order summaries or sales KPIs
-- **Orchestration**: ADF triggers ingest, Databricks performs transformations
+- **Source**: CSV files plus one API or second file source — [csv](https://docs.python.org/3/library/csv.html), [Requests quickstart](https://requests.readthedocs.io/en/latest/user/quickstart/)
+- **Landing/Bronze**: raw ingestion — [medallion architecture](https://docs.databricks.com/en/lakehouse/medallion.html)
+- **Silver**: cleaned, typed, deduplicated data — [PySpark DataFrame quickstart](https://spark.apache.org/docs/latest/api/python/getting_started/quickstart_df.html)
+- **Gold**: simple analytics-friendly output such as customer/order summaries or sales KPIs — [star schema guidance](https://learn.microsoft.com/power-bi/guidance/star-schema)
+- **Orchestration**: ADF triggers ingest, Databricks performs transformations — [ADF introduction](https://learn.microsoft.com/azure/data-factory/introduction), [Databricks jobs](https://docs.databricks.com/en/jobs/index.html)
 
 ### Practical exercises
 - Finalize the architecture and folder/table naming
@@ -239,10 +239,10 @@ Build a small **lakehouse pipeline**:
 - Finish a realistic first-pass Databricks Associate prep cycle
 
 ### Topics
-- Review weak spots in Python, PySpark, Delta Lake, and ADF
-- Portfolio polish and concise documentation
-- Interview storytelling: project, tradeoffs, and debugging examples
-- Certification prep strategy for the next 2-4 weeks after the course
+- Review weak spots in Python, PySpark, Delta Lake, and ADF — [Python tutorial](https://docs.python.org/3/tutorial/), [PySpark getting started](https://spark.apache.org/docs/latest/api/python/getting_started/index.html), [Delta Lake docs](https://docs.delta.io/latest/index.html), [Azure Data Factory docs](https://learn.microsoft.com/azure/data-factory/)
+- Portfolio polish and concise documentation — [about READMEs](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-readmes), [writing on GitHub](https://docs.github.com/en/get-started/writing-on-github)
+- Interview storytelling: project, tradeoffs, and debugging examples — [Azure Well-Architected data analytics guidance](https://learn.microsoft.com/azure/well-architected/service-guides/data-analytics)
+- Certification prep strategy for the next 2-4 weeks after the course — [Databricks certification page](https://www.databricks.com/learn/certification/data-engineer-associate), [Databricks training catalog](https://www.databricks.com/learn/training/home)
 
 ### Practical exercises
 - Write a concise project summary: business goal, architecture, pipeline flow, and outputs
