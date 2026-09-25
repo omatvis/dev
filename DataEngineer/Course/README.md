@@ -21,6 +21,29 @@ A practical 8-week learning plan for moving from software engineering into data 
 - **Optional AI Data Engineer track**: practical next step if you want to support RAG, vector search, and AI data pipelines
 - **Additional materials**: topics deliberately deferred to keep the first 2 months realistic
 
+## Goal -> resources quick map
+
+Use this when you want a direct association between a learning goal and the best place to start.
+
+| Goal | Best resources |
+|---|---|
+| Learn Python for Data Engineering | [Microsoft Learn Python](https://learn.microsoft.com/training/paths/beginner-python/) · [Python tutorial](https://docs.python.org/3/tutorial/) |
+| Refresh advanced SQL | [T-SQL window functions / OVER clause](https://learn.microsoft.com/sql/t-sql/queries/select-over-clause-transact-sql) |
+| Learn pandas for local data work | [pandas getting started](https://pandas.pydata.org/docs/getting_started/index.html) |
+| Learn PySpark | [PySpark getting started](https://spark.apache.org/docs/latest/api/python/getting_started/index.html) · [PySpark DataFrame quickstart](https://spark.apache.org/docs/latest/api/python/getting_started/quickstart_df.html) |
+| Understand Spark concepts | [Spark SQL guide](https://spark.apache.org/docs/latest/sql-programming-guide.html) |
+| Learn Databricks basics | [Databricks getting started](https://docs.databricks.com/en/getting-started/index.html) |
+| Understand Lakehouse / Medallion architecture | [Lakehouse architecture](https://docs.databricks.com/en/lakehouse-architecture/index.html) · [Medallion architecture](https://docs.databricks.com/en/lakehouse/medallion.html) |
+| Learn Delta Lake | [Delta Lake docs](https://docs.delta.io/latest/index.html) · [Delta quick start](https://docs.delta.io/latest/quick-start.html) |
+| Prepare for Databricks Data Engineer Associate | [Certification page](https://www.databricks.com/learn/certification/data-engineer-associate) · [Training catalog](https://www.databricks.com/learn/training/home) |
+| Learn Azure Data Factory | [ADF introduction](https://learn.microsoft.com/azure/data-factory/introduction) · [Copy activity overview](https://learn.microsoft.com/azure/data-factory/copy-activity-overview) · [Pipelines and activities concepts](https://learn.microsoft.com/azure/data-factory/concepts-pipelines-activities) |
+| Learn data modeling for analytics | [Microsoft star schema guidance](https://learn.microsoft.com/power-bi/guidance/star-schema) · [Kimball resources](https://www.kimballgroup.com/data-warehouse-business-intelligence-resources/) |
+| Build basic Snowflake awareness | [Snowflake key concepts](https://docs.snowflake.com/en/user-guide/intro-key-concepts) · [Snowflake getting started](https://docs.snowflake.com/en/user-guide-getting-started) |
+| Learn dbt later | [dbt introduction](https://docs.getdbt.com/docs/introduction) · [dbt guides](https://docs.getdbt.com/guides) |
+| Learn orchestration beyond ADF later | [Apache Airflow docs](https://airflow.apache.org/docs/) |
+| Learn streaming later | [Kafka docs](https://kafka.apache.org/documentation/) · [Spark Structured Streaming guide](https://spark.apache.org/docs/latest/structured-streaming-programming-guide.html) |
+| Learn optional AI Data Engineering later | [Azure RAG overview](https://learn.microsoft.com/azure/search/retrieval-augmented-generation-overview) · [Databricks generative AI docs](https://docs.databricks.com/en/generative-ai/index.html) |
+
 ## Recommended success criteria
 
 By the end of week 8, you should be able to:
