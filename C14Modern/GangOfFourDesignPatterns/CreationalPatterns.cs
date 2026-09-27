@@ -1,0 +1,34 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace GangOfFourDesignPatterns;
+
+public partial class Program
+{
+
+}
+
+public class Singelton
+{
+    private Singelton() { }
+
+    public static readonly object _lock = new ();
+
+    public static Singelton Instance
+    {
+        get
+        {
+            if (field == null)
+            {
+                lock (_lock) field ??= new Singelton();
+            }
+            return field;
+        }
+    }
+
+    public bool SomeUsefulMethod()
+    {
+        return true;
+    }
+}
