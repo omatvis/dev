@@ -44,8 +44,11 @@ namespace GangOfFourDesignPatterns
             Console.WriteLine("Prototype");
             Prototype original = new Prototype { Property = "Original" };
             Prototype clone = (Prototype)original.Clone();
+            Console.WriteLine(original.Property);  // Outputs: Original
+            Console.WriteLine(clone.Property);  // Outputs: Original
             clone.Property = "Clone";
             Console.WriteLine(original.Property);  // Outputs: Original
+            Console.WriteLine(clone.Property);  // Outputs: Clone
             Console.WriteLine("");
 
             Console.WriteLine("---------- Structural Patterns");
