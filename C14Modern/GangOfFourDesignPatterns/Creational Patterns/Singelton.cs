@@ -2,12 +2,11 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace GangOfFourDesignPatterns;
+namespace GangOfFourDesignPatterns.Creational_Pattern;
 
-public partial class Program
-{
-
-}
+/// <summary>
+/// Ensures that a class has only one instance and provides a global point of access to it.
+/// </summary>
 
 public class Singelton
 {
