@@ -18,10 +18,10 @@ namespace GangOfFourDesignPatterns
             // Usage
             Creator creator = new ConcreteCreatorA();
             Product product = creator.FactoryMethod();
-            Console.WriteLine(product.GetType().Name);  // Outputs: ConcreteProductA
+            Console.WriteLine($"{product.GetType().Name}: {product.Operation()}");  // Outputs: ConcreteProductA
             creator = new ConcreteCreatorB();
             product = creator.FactoryMethod();
-            Console.WriteLine(product.GetType().Name);  // Outputs: ConcreteProductB
+            Console.WriteLine($"{product.GetType().Name}: {product.Operation()}");  // Outputs: ConcreteProductB
             Console.WriteLine();
 
             Console.WriteLine("Abstract Factory");

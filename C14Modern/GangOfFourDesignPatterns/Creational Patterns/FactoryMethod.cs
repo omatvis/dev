@@ -9,10 +9,16 @@ namespace GangOfFourDesignPatterns.Creational_Pattern;
 /// but lets child classes decide which class to instantiate.
 /// </summary>
 
-public abstract class Product { }
+public abstract class Product { 
+    public abstract string Operation();
+}
 
-public class ConcreteProductA : Product { }
-public class ConcreteProductB : Product { }
+public class ConcreteProductA : Product { 
+    public override string Operation() => "ConcreteProductA Operation()";
+}
+public class ConcreteProductB : Product { 
+    public override string Operation() => "ConcreteProductB Operation()";
+}
 
 public abstract class Creator
 {
