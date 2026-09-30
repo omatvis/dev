@@ -1,3 +1,6 @@
 <Solution>
+  <Project Path="../Adapter/Adapter.csproj" Id="df7eb43e-91c3-418d-b67d-4fb7c9552512" />
+  <Project Path="../Bridge/Bridge.csproj" Id="fa38fd48-6242-4452-a72c-9eee9adb764c" />
+  <Project Path="../Composition/Composition.csproj" Id="e8d8c63d-71ac-4e62-817a-36bfb4000ff9" />
   <Project Path="GangOfFourDesignPatterns.csproj" />
 </Solution>

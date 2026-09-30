@@ -5,7 +5,8 @@ using System.Text;
 namespace GangOfFourDesignPatterns.Behavioral_Patterns;
 
 /// <summary>
-/// The Visitor Design Pattern is a behavioral design pattern that allows you to separate algorithms from the objects on which they operate. 
+/// The Visitor Design Pattern is a behavioral design pattern that allows you to separate algorithms from the 
+/// objects on which they operate. 
 /// It lets you define a new operation without changing the classes of the elements on which it operates.
 /// </summary>
 /// 
