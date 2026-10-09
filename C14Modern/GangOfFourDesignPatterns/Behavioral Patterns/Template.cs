@@ -5,7 +5,9 @@ using System.Text;
 namespace GangOfFourDesignPatterns.Behavioral_Patterns;
 
 /// <summary>
-/// The Template Design Pattern is a behavioral design pattern that defines the program skeleton of an algorithm in a method, called a template method, which defers some steps to subclasses. It lets one redefine certain steps of an algorithm without changing the algorithm's structure.
+/// The Template Design Pattern is a behavioral design pattern that defines the program skeleton of an algorithm in a method, 
+/// called a template method, which defers some steps to subclasses. 
+/// It lets one redefine certain steps of an algorithm without changing the algorithm's structure.
 /// </summary>
 public abstract class AbstractClass
 {

@@ -5,7 +5,11 @@ using System.Text;
 namespace GangOfFourDesignPatterns.Behavioral_Patterns;
 
 /// <summary>
-/// The Interpreter pattern is a behavioral design pattern that defines a representation for a grammar of a language and provides an interpreter to deal with this grammar. It is used to interpret sentences in a language defined by a grammar. The pattern is useful when you have a simple language to interpret, and you want to represent the grammar of that language in code.
+/// The Interpreter pattern is a behavioral design pattern that defines a representation for a grammar of a language 
+/// and provides an interpreter to deal with this grammar. 
+/// It is used to interpret sentences in a language defined by a grammar. 
+/// The pattern is useful when you have a simple language to interpret, 
+/// and you want to represent the grammar of that language in code.
 /// </summary>
 
 // 1. Context stores state (variables)

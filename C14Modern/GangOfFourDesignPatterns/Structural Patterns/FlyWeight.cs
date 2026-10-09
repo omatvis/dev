@@ -5,7 +5,10 @@ using System.Text;
 namespace GangOfFourDesignPatterns.Structural_Patterns;
 
 /// <summary>
-/// The Flyweight pattern is a structural design pattern that allows programs to support vast quantities of objects by keeping their memory consumption low. It achieves this by sharing as much data as possible with similar objects; it is a way to use objects in large numbers when a simple repeated representation would use an unacceptable amount of memory.
+/// The Flyweight pattern is a structural design pattern that allows programs to support 
+/// vast quantities of objects by keeping their memory consumption low. 
+/// It achieves this by sharing as much data as possible with similar objects; 
+/// it is a way to use objects in large numbers when a simple repeated representation would use an unacceptable amount of memory.
 /// </summary>
 interface IFont
 {

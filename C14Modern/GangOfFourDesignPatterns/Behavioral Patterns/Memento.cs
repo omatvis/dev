@@ -5,7 +5,9 @@ using System.Text;
 namespace GangOfFourDesignPatterns.Behavioral_Patterns;
 
 /// <summary>
-/// The Memento Design Pattern is a behavioral design pattern that allows an object to capture its internal state and save it externally so that it can be restored later without violating encapsulation.
+/// The Memento Design Pattern is a behavioral design pattern that allows an object to capture its internal state and 
+/// save it externally 
+/// so that it can be restored later without violating encapsulation.
 /// </summary>
 public class Memento
 {
