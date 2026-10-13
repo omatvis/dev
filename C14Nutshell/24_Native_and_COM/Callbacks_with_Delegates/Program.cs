@@ -5,6 +5,7 @@ namespace Callbacks_with_Delegates
 {
     internal class Program
     {
+        [UnmanagedFunctionPointer(CallingConvention.StdCall)]
         delegate bool EnumWindowsCallback(IntPtr hWnd, IntPtr lParam);
         [DllImport("user32.dll")]
         static extern int EnumWindows(EnumWindowsCallback hWnd, IntPtr lParam);
