@@ -1,4 +1,5 @@
 <Solution>
   <Project Path="../Signalling/Signalling.csproj" />
+  <Project Path="../Simple/Simple.csproj" Id="bc1f077e-31c1-4f45-8971-a866bf6f78dc" />
   <Project Path="ThreadForegroundAndBackground.csproj" />
 </Solution>
