@@ -1,6 +1,7 @@
 <Solution>
   <Project Path="../Callbacks_with_Delegates/Callbacks_with_Delegates.csproj" />
   <Project Path="../Callbacks_with_Func_Pointer/Callbacks_with_Func_Pointer.csproj" />
+  <Project Path="../CUnion/CUnion.csproj" Id="bd86539f-223b-4324-acfc-b9f3f079251e" />
   <Project Path="../Marshaling_Classes_and_Struct/Marshaling_Classes_and_Struct.csproj" />
   <Project Path="DLL_COM.csproj" />
 </Solution>
