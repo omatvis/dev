@@ -1,7 +1,9 @@
 <Solution>
   <Project Path="../Callbacks_with_Delegates/Callbacks_with_Delegates.csproj" />
   <Project Path="../Callbacks_with_Func_Pointer/Callbacks_with_Func_Pointer.csproj" />
+  <Project Path="../COM_Interoperability/COM_Interoperability.csproj" Id="2fe0115d-14f0-4a30-af04-20a39901ce8f" />
   <Project Path="../CUnion/CUnion.csproj" Id="bd86539f-223b-4324-acfc-b9f3f079251e" />
+  <Project Path="../MappingStructToUnmagamentMemory/MappingStructToUnmagamentMemory.csproj" Id="86fcb83a-1417-4b77-8cce-c24d4d54d94d" />
   <Project Path="../Marshaling_Classes_and_Struct/Marshaling_Classes_and_Struct.csproj" />
   <Project Path="../SharedMemory/SharedMemoryAppl1.csproj" Id="6bed6521-bf2c-45b9-bd04-6741e70f25dd" />
   <Project Path="../SharedMemoryApp2/SharedMemoryApp2.csproj" Id="253fe385-f4a5-47d6-90f6-8f7ecfe4e94e" />
